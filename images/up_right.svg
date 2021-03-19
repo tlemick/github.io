@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70px" height="70px" viewBox="0 0 70 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>down</title>
+    <g id="PDF" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="down" transform="translate(35.000000, 35.000000) rotate(225.000000) translate(-35.000000, -35.000000) translate(14.000000, 7.000000)" fill="#000000" fill-rule="nonzero">
+            <path d="M41.2789598,35.6619385 L38.6122932,32.9952719 L22.9148936,48.6737589 L22.9148936,2.16784872 C22.9148936,1.12765957 22.0638298,0.276595745 21.0236406,0.276595745 C19.9834515,0.276595745 19.1323877,1.12765957 19.1323877,2.16784872 L19.1323877,48.6737589 L3.45390064,32.9952719 L0.787234043,35.6619385 L21.0236406,55.8983451 L41.2789598,35.6619385 Z" id="Path"></path>
+        </g>
+    </g>
+</svg>
