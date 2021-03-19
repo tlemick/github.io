@@ -690,6 +690,10 @@ footer {
   stroke-dashoffset: 0;
 }
 
+.link--arrowed:hover h2 {
+  color: darkgray;
+}
+
 .long {
   width: 800px;
   max-width: 800px;

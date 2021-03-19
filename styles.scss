@@ -521,11 +521,14 @@ footer {
 	&:hover {
 		.arrow-icon {
 			transform: translate3d(5px, 0, 0);
-		}
+        }
 		
 		.arrow-icon--circle {
 			stroke-dashoffset: 0;
 		}
+        h2 {
+            color: darkgray;
+        }
 	}
 }
 
