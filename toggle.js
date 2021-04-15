@@ -168,22 +168,7 @@ openNav();
 //--------Case study image reveal on scroll -----------
 
 
-gsap.registerPlugin(ScrollTrigger, CSSRulePlugin)
-
-gsap.to(".me__home", {
-    opacity: 1,
-    duration: .5,
-    x: 20,
-        scrollTrigger: {
-            trigger: ".hero-image",
-            toggleActions: "play none none reverse",
-            start: "bottom top",
-            end: "bottom bottom"
-        },
-});
-
-
-
+gsap.registerPlugin(ScrollTrigger)
 
 let revealContainers = document.querySelectorAll(".cover");
 

@@ -252,14 +252,11 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   position: fixed;
   width: 100vw;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   margin-top: 2em;
   padding-left: 2em;
   padding-right: 2em;
@@ -375,7 +372,7 @@ ul.transition {
 ul.transition li {
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
-  background: #415879;
+  background: var(--text-color);
   width: 100vw;
   height: 100%;
 }
