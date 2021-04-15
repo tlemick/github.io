@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 7</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.282353 0 0 0 0 0.282353 0 0 0 0 0.282353 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="portfolio" transform="translate(-867.000000, -782.000000)">
+            <g id="Group-5" transform="translate(867.000000, 543.000000)">
+                <g id="Group-7" transform="translate(0.000000, 239.000000)">
+                    <circle id="Oval" fill="#FFFFFF" cx="30" cy="30" r="30"></circle>
+                    <g filter="url(#filter-1)" id="down">
+                        <g transform="translate(30.000000, 30.500000) rotate(270.000000) translate(-30.000000, -30.500000) translate(17.000000, 13.000000)">
+                            <path d="M25.1673759,21.9971631 L23.5673759,20.3971631 L14.1489362,29.8042554 L14.1489362,1.90070923 C14.1489362,1.27659574 13.6382979,0.765957447 13.0141844,0.765957447 C12.3900709,0.765957447 11.8794326,1.27659574 11.8794326,1.90070923 L11.8794326,29.8042554 L2.47234038,20.3971631 L0.872340426,21.9971631 L13.0141844,34.1390071 L25.1673759,21.9971631 Z" id="Path" fill="#000000" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

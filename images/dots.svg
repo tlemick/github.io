@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="61px" height="184px" viewBox="0 0 61 184" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>useless decoration</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.601100377">
+        <g id="portfolio" transform="translate(-884.000000, -2891.000000)">
+            <g id="useless-decoration" transform="translate(884.000000, 2891.000000)">
+                <circle id="Oval" fill="#130034" cx="12" cy="12" r="12"></circle>
+                <circle id="Oval" fill="#BF4F29" cx="12" cy="52" r="12"></circle>
+                <circle id="Oval" fill="#63B784" cx="49" cy="52" r="12"></circle>
+                <circle id="Oval" fill="#967545" cx="49" cy="92" r="12"></circle>
+                <circle id="Oval" fill="#DC3C3C" cx="49" cy="132" r="12"></circle>
+                <circle id="Oval" fill="#DCC83C" cx="12" cy="132" r="12"></circle>
+                <circle id="Oval" fill="#CA3CDC" cx="49" cy="172" r="12"></circle>
+                <circle id="Oval" fill="#416935" cx="12" cy="172" r="12"></circle>
+                <circle id="Oval" fill="#5390AA" cx="49" cy="12" r="12"></circle>
+                <circle id="Oval" fill="#584DCB" cx="12" cy="92" r="12"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

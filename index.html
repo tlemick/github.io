@@ -3,157 +3,191 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css?family=Shippori+Mincho+B1:400,700|Nunito:300,400&display=swap" rel="stylesheet">
         <link href="styles.css" rel="stylesheet">
-        <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
-        <script src="swupplugin.js"></script>
+        <script src="https://unpkg.com/@barba/core"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/CSSRulePlugin.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+        
         <title>Home</title>
     </head>
-    <body>
-        <div>
-            <span class="toggle"></span>
-        </div>
-        <main id="swup" class="transition-fade">
+    <body data-barba="wrapper">
+        <ul class="transition">
+            <li></li>
+        </ul>
+
+        <header>
+            <div class="header__right">
+                <button class="nav_toggle" id="nav">menu</button>
+                <button class="nav_toggle toggle">mode</button>
+            </div>
+        </header> 
+
+        <aside id="mb_nav" class="nav">
+            <div class="nav__right nav__panels">
+                <ul>
+                    <img class="nav__link" src="images/nav_icon.svg">
+                    <li><a class="nav__link" href="">Home</a></li>
+                    <li><a class="nav__link" href="">Portfolio</a></li>
+                        <ul id="submenu">
+                            <li><a class="nav__link">Stock Market Game</a></li>
+                            <li><a class="nav__link">Zeguro</a></li>
+                            <li><a class="nav__link">Orbits of the Operatists</a></li>
+                            <li><a class="nav__link">WeTravel</a></li>
+                            <li><a class="nav__link">Streetcars of San Francisco</a></li>
+                        </ul>
+                    <li><a class="nav__link" href="">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav__left-top nav__panels nav__link">
+                <div class="vertical-text nav__link">
+                    <div class="rotated">
+                        <h2 class="normal">About this site</h2>
+                    </div>
+                    <div class="icons nav__link">
+                        <img src="images/about_icon.svg">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p class="nav__link">The type setting is the beautifully geometric (and open source) <a>Cooper Hewitt</a>.</p>
+                    <p class="nav__link">Iconography is mostly by the inventive <a>XXX XXX</a>.</p>
+                    <p class="nav__link">Animations are page transitions were created using <a>Barba.JS</a> and the <a>GSAP animation platform</a>.</p>
+                </div>
+            </div>
+
+            <div class="nav__left-bottom nav__panels">
+                <div class="vertical-text nav__element">
+                    <div class="rotated">
+                        <h2 class="normal">Contact Me</h2>
+                    </div>
+                    <img src="images/contact_icon.svg">
+                </div>
+                <div class="menu-contact">
+                    <div class="contact-tiles nav__element">
+                        <div id="contact-icon"><img src="images/mail.svg"></div>
+                        <p>tlemick@gmail.com</p>
+                    </div>
+                    <div class="contact-tiles nav__element">
+                        <div id="contact-icon"><img src="images/phone.svg"></div>
+                        <p>+1-617-686-1863</p>
+                    </div>
+                    <div class="contact-tiles nav__element">
+                        <div id="contact-icon"><img src="images/li.svg"></div>
+                        <p>linkedin.com/tlemick</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <main data-barba="container" data-barba-namespace="home">
+
             <div class="hero-image">
-                <div class="hero-headline">
+
+                <div class="hero-intro">
+                    <div class="line">
+                        <h1>hello!</h1>
+                    </div>
+                    <div class="line">
+                        <h1>I’m Travis,</h1>
+                    </div>
+                    <div class="line spacer">
+                        <h1>a creator of engaging</h1>
+                    </div>
+                    <div class="line">
+                        <h1>digital experiences.</h1>
+                    </div>
+                    <img src="images/down.svg">
+                </div>
+            </div>
+
+            <div class="selected-works">
+                <div class="selected-works__header">
+                    <h1>Selected <span class="semibold">Works</span></h1>
+                    <p>These are the projects that helped shape me.  Some are personal, some professional, but all excellent vehicles for growth and fulfillment.</p>
+                </div>
+            </div>
+
+            <div class="selected-works__tile margin10">
+                <a class="selected-works__image opera-link smg" href="operatists.html">
+                    <img src="images/SMG_splash.png">
+                </a>
+                <div class="selected-works__sub-head">
+                    <h2 class="thin item-a">01</h2>
+                    <a class="opera-link item-b" href="operatists.html"><h2 class="normal">The Stock Market Game</h2></a>
+                    <p class="item-c">Helping students form goals and develop a framework for decisions relating to securities trading.</p>
+                    <a class="opera-link item-d" href="operatists.html"><img src='images/up_right.svg' height="48px"></a>
+                </div>
+            </div>
+
+            <div class="selected-works__tile">
+                <a class="selected-works__image zeguro" href="zeguro.html">
+                    <img src="images/zeguro_splash.png">
+                </a>
+                <div class="selected-works__sub-head">
+                    <h2 class="thin item-a">02</h2>
+                    <a class="item-b" href="zeguro.html"><h2 class="normal">Zeguro</h2></a>
+                    <p class="item-c">Creating a cyber-security defense & education platform to strengthen small to medium businesses.</p>
+                    <a class="item-d" href="zeguro.html"><img src='images/up_right.svg' height="48px"></a>
+                </div>
+            </div>
+
+            <div class="selected-works__tile">
+                <a class="selected-works__image opera" href="operatists.html">
+                    <img src="images/Opera_splash.png">
+                </a>
+                <div class="selected-works__sub-head">
+                    <h2 class="thin item-a">03</h2>
+                    <a class="item-b" href="zeguro.html"><h2 class="normal">Orbits of the Operatists</h2></a>
+                    <p class="item-c">Mapping the intersection of culture, nationalism, and operatic premieres. A project designed to learn R.</p>
+                    <a class="item-d" href="zeguro.html"><img src='images/up_right.svg' height="48px"></a>
+                </div>
+            </div>
+
+            <div class="selected-works__tile">
+                <a class="selected-works__image wetravel" href="operatists.html">
+                    <img src="images/wetravel_splash.png">
+                </a>
+                <div class="selected-works__sub-head">
+                    <h2 class="thin item-a">04</h2>
+                    <a class="item-b" href="zeguro.html"><h2 class="normal">WeTravel</h2></a>
+                    <p class="item-c">An update to a piece of UI that would build more confidence in the product, leading to a higher conversion rate on the CTA.</p>
+                    <a class="item-d" href="zeguro.html"><img src='images/up_right.svg' height="48px"></a>
+                </div>
+            </div>
+
+            <div class="selected-works__tile">
+                <a class="selected-works__image transit" href="operatists.html">
+                    <img src="images/trains_splash.png">
+                </a>
+                <div class="selected-works__sub-head">
+                    <h2 class="thin item-a">05</h2>
+                    <a class="item-b" href="zeguro.html"><h2 class="normal">Streetcars of S.F.</h2></a>
+                    <p class="item-c">A mapping project that animates and narrates the history of light rail development in the SF Bay area.</p>
+                    <a class="item-d" href="zeguro.html"><img src='images/up_right.svg' height="48px"></a>
+                </div>
+            </div>
+
+            <div class="selected-works">
+                <div class="selected-works__footer">
+                    <h1>Let's build <span class="semibold">together</span></h1>
+                    <p>Say hello!  I love chatting about new projects and learning experiences.  Perhaps our goals are in alignment!</p>
                     <div>
-                        <h2 class="josefin down">Hello there! </h2>
-                        <h1 class="josefin bold">I’m Travis</h1>
-                    </div>
-                    <div>
-                        <h1 class="josefin">UX designer & <br />crafter of digital things</h1>
-                        <img class="btw" src="images/down.svg" height="64px">
-                    </div>
-                </div>
-            </div>
-            <div class='wrapper'>
-                <div class="section-header">
-                    <h1 class="josefin">Selected<br /><span class="josefin bold">Projects</span></h1>
-                </div>
-            </div>
-            <section class="recent-works">
-                <div class="recent-works-title smg">
-                    <h1 class="josefin">1 / 5</h1>
-                    <h2 class="josefin">Stock Market Game</h2>
-                </div>
-                <div class="case-study">
-                    <div class="recent-splash smg-static">
-                        <img src="images/SMG_splash.png">
-                    </div>
-                    <div class="headline">
-                        <a class="link link--arrowed" href="#">
-                            <h2 class="nunito">Helping students make <br />sense of securities trading</h2>
-                            <svg class="arrow-icon btw" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 32 32">
-                              <g fill="none" stroke="#000000" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10">
-                                <circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle>
-                                <path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path>
-                              </g>
-                            </svg>
-                        </a>
+                        <div class="contact-tiles">
+                            <div id="contact-icon"><img src="images/mail.svg"></div>
+                            <p>tlemick@gmail.com</p>
+                        </div>
+                        <div class="contact-tiles">
+                            <div id="contact-icon"><img src="images/li.svg"></div>
+                            <p>linkedin.com/tlemick</p>
+                        </div>
                     </div>
                 </div>
-                <div class="recent-works-title zeguro">
-                    <h1 class="josefin">2 / 5</h1>
-                    <h2 class="josefin">Zeguro</h2>
-                </div>
-                <div class="case-study">
-                    <div class="recent-splash zeguro-static">
-                        <img src="images/zeguro_splash.png">
-                    </div>
-                    <div class="headline">
-                        <a class="link link--arrowed" href="#">
-                            <h2 class="nunito">Cyber-security defense <br />and education platform</h2>
-                            <svg class="arrow-icon btw" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 32 32">
-                              <g fill="none" stroke="#000000" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10">
-                                <circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle>
-                                <path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path>
-                              </g>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="recent-works-title opera">
-                    <h1 class="josefin">3 / 5</h1>
-                    <h2 class="josefin">Orbits of the Operatists</h2>
-                </div>
-                <div class="case-study">
-                    <div class="recent-splash opera-static">
-                        <img src="images/Opera_splash.png">
-                    </div>
-                    <div class="headline">
-                        <a class="link link--arrowed" href="/operatists.html">
-                            <h2 class="nunito">Correlating opera<br />and geography</h2>
-                            <svg class="arrow-icon btw" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 32 32">
-                              <g fill="none" stroke="#000000" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10">
-                                <circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle>
-                                <path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path>
-                              </g>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="recent-works-title transit">
-                    <h1 class="josefin">4 / 5</h1>
-                    <h2 class="josefin">Streetcars of S.F.</h2>
-                </div>
-                <div class="case-study">
-                    <div class="recent-splash transit-static">
-                        <img src="images/trains_splash.png">
-                    </div>
-                    <div class="headline">
-                        <a class="link link--arrowed" href="/transit.html">
-                            <h2 class="nunito">Reimagining an<br />archival document</h2>
-                            <svg class="arrow-icon btw" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 32 32">
-                              <g fill="none" stroke="#000000" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10">
-                                <circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle>
-                                <path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path>
-                              </g>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="recent-works-title wetravel">
-                    <h1 class="josefin">5 / 5</h1>
-                    <h2 class="josefin">WeTravel</h2>
-                </div>
-                <div class="case-study">
-                    <div class="recent-splash wetravel-static">
-                        <img src="images/wetravel_splash.png">
-                    </div>
-                    <div class="headline">
-                        <a class="link link--arrowed" href="#">
-                            <h2 class="nunito">Increasing a <br />CTA clickrate</h2>
-                            <svg class="arrow-icon btw" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 32 32">
-                              <g fill="none" stroke="#000000" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10">
-                                <circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle>
-                                <path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path>
-                              </g>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </section>
-            <div class="personal-image">
-                <div class="img-1"></div>
-                <div class="img-2"></div>
-                <div class="interior">
-                    <h1 class="josefin">Interests &<br /><span class="josefin bold">Proficiencies</span></h1>
-                    <p class="nunito secondary">I’m enthusiastic about <img class="btw" src="images/light_rail.svg" height="24px"> transit,  <img class="btw" src="images/education.svg" height="24px">  education,  <img class="btw" src="images/finance.svg" height="24px">  finance, and <img class="btw" src="images/agriculture.svg" height="24px"> agriculture. My domain expertise covers insurtech, legal research, and cyber-security. </p>
-                    <p class="nunito secondary">I also love to bring designs to life in code and am capable in many front-end technologies. HTML, CSS, and Javascript—with some react thrown in for good measure.</p>
-                </div>
-            </div>
-            <section class="lets-work-together">
-                <div class="cta">
-                    <h1 class="josefin">Let’s build something <span class="josefin bold">together!</span></h1>
-                    <p class="nunito">I’m currently looking for my next learning experience.  New projects and partnerships interest me, and I’d love to hear what you’re working on. Chat me up on LinkedIn!</p>
                 
-                    <div class="button_cont" align="center">
-                        <a class="example_c" href="/https://www.linkedin.com/in/travisemick" target="_blank" rel="nofollow noopener"><p class="nunito">Linkedin</p></a>
-                    </div>
+                <div class="dots">
+                    <img src="images/dots.svg">
                 </div>
-            </section>
-            <footer>
-            </footer>
+
+            </div>
         </main>
     </body>
     <script src="toggle.js"></script>
