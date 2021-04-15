@@ -1003,7 +1003,7 @@ ul {
   height: 56vh;
 }
 
-.opera {
+.operatists {
   background-image: url(images/coline.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -1012,7 +1012,7 @@ ul {
 }
 
 @media (max-width: 599px) {
-  .opera {
+  .operatists {
     background-position: center;
   }
 }
