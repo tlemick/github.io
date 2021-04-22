@@ -1,6 +1,6 @@
-//--------BEGIN Day Night Toggle ---------------
+//-------- Day Night Toggle ---------------
 
-const btn = document.querySelector('.toggle');
+const btn = document.querySelector('.header__toggle--mode');
 const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 
 const currentTheme = localStorage.getItem("theme");
@@ -30,13 +30,12 @@ btn.addEventListener("click", function () {
     localStorage.setItem("theme", theme);
 });
 
-//--------END Day Night Toggle ---------------
-//--------BEGIN Text Line Animation ---------------
 
+//-------- Text Line Animation ---------------
 
 const textRev = gsap.timeline();
 
-textRev.from(".line h1", 1.8, {
+textRev.from(".js-line h1", 1.8, {
     y: 200,
     ease: "power4.out",
     delay: 1,
@@ -46,13 +45,12 @@ textRev.from(".line h1", 1.8, {
     },
 });
 
-//--------END Text Line Animation ---------------
-//--------BEGIN Fade Transition ---------------
 
+//-------- Case Study Tiles Transition ---------------
+/*I stopped working on this because it was causing some sort of interference with the other gsap functions
+  What I wanted was a function that would handle 3 animations on the case tiles
+*/
 
-
-//--------END Fade Transition ---------------
-//--------BEGIN Case Study Tiles Transition ---------------
 
 /*
 function hoverTile() {
@@ -68,8 +66,8 @@ hoverTile();
 */
 
 
-//--------END Case Study Tiles Transition ---------------
-//--------BEGIN Page Transition ---------------
+
+//-------- Page Transition ---------------
 
 function pageTransition() {
 
@@ -105,70 +103,63 @@ barba.init({
   })
 
 
-//--------End Page Transition ---------------
-//--------BEGIN Nav Transition---------------
+//-------- Nav Transitions---------------
 
-// Timeline created and paused
 var tl = gsap.timeline({ paused: true });
 
 function openNav() {
   animateOpenNav();
-  var navBtn = document.getElementById("nav");
+  var navBtn = document.getElementsByClassName("header__toggle--menu")[0];
   navBtn.onclick = function (e) {
-    zIndexMover("10");
-    // Toggle reversed to it's opposite value
+    zIndexMover("5");
     tl.reversed(!tl.reversed());
-    // Use the toggle method in the classList API
     navBtn.classList.toggle("active");
   };
 }
 
 var zIndexMover = function(newZ) {
-    var element = document.getElementsByClassName("nav");
+    var element = document.getElementsByClassName("main-nav");
     element[0].style.zIndex = newZ;
 }
 
 function animateOpenNav() {
-  var mobileNav = document.getElementsByClassName("nav__panels");
+  var mobileNav = document.getElementsByClassName("js-nav__panels");
   tl.to(mobileNav, {
-    onStart: zIndexMover("-10"),
+    onStart: zIndexMover("-1"),
     duration: 1,
     scaleY: 1,
     stagger: {
         each: 0.3,
         ease: "power3",
     }
-  }).to(".nav__link", {
+  }).to(".js-nav__link", {
     opacity: 1,
     y: 0,
     duration: .1,
     stagger: {
-      // wrap advanced options in an object
       each: 0.06,
       ease: "power3.in"
     }
-  }).to(".nav__element", {
+  }).to(".js-nav__element", {
     opacity: 1,
     y: 0,
     duration: .1,
     stagger: {
-      // wrap advanced options in an object
       each: 0.06,
       ease: "power3.in"
     }
   })
-  .reverse(); // Finally reverse the timeline. reversed() is true
+  .reverse();
 }
 
-// init
 openNav();
 
 
-//--------END Nav Transition---------------
+
 //--------Case study image reveal on scroll -----------
 
-
 gsap.registerPlugin(ScrollTrigger)
+
 
 let revealContainers = document.querySelectorAll(".cover");
 
