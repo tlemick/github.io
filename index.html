@@ -3,181 +3,186 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="styles.css" rel="stylesheet">
+        <link href="css/app.css" rel="stylesheet">
         <script src="https://unpkg.com/@barba/core"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/CSSRulePlugin.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
         
         <title>Home</title>
     </head>
+
     <body data-barba="wrapper">
         <ul class="transition">
             <li></li>
         </ul>
 
-        <header>
-            <div class="header__right">
-                <button class="nav_toggle" id="nav">menu</button>
-                <button class="nav_toggle toggle">mode</button>
+        <header class="header">
+            <div class="header__nav">
+                <button class="header__toggle header__toggle--menu">menu</button>
+                <button class="header__toggle header__toggle--mode">mode</button>
             </div>
-        </header> 
+        </header>
 
-        <aside id="mb_nav" class="nav">
-            <div class="nav__right nav__panels">
+        <div class="main-nav">
+            <div class="nav__right js-nav__panels">
                 <ul>
-                    <img class="nav__link" src="images/nav_icon.svg">
-                    <li><a class="nav__link" href="">Home</a></li>
-                    <li><a class="nav__link" href="">Portfolio</a></li>
-                        <ul id="submenu">
-                            <li><a class="nav__link">Stock Market Game</a></li>
-                            <li><a class="nav__link">Zeguro</a></li>
-                            <li><a class="nav__link">Orbits of the Operatists</a></li>
-                            <li><a class="nav__link">WeTravel</a></li>
-                            <li><a class="nav__link">Streetcars of San Francisco</a></li>
+                    <img class="js-nav__link" src="images/nav_icon.svg">
+                    <li><a class="main-nav__major-link js-nav__link" href="">Home</a></li>
+                    <li><a class="main-nav__major-link js-nav__link" href="">Portfolio</a></li>
+                        <ul>
+                            <li><a class="main-nav__minor-link js-nav__link" href="operatists.html">Stock Market Game</a></li>
+                            <li><a class="main-nav__minor-link js-nav__link" href="operatists.html">Zeguro</a></li>
+                            <li><a class="main-nav__minor-link js-nav__link" href="operatists.html">Orbits of the Operatists</a></li>
+                            <li><a class="main-nav__minor-link js-nav__link" href="operatists.html">WeTravel</a></li>
+                            <li><a class="main-nav__minor-link js-nav__link" href="operatists.html">Streetcars of San Francisco</a></li>
                         </ul>
-                    <li><a class="nav__link" href="">Contact</a></li>
+                    <li><a class="main-nav__major-link js-nav__link" href="">Contact</a></li>
                 </ul>
             </div>
-            <div class="nav__left-top nav__panels nav__link">
-                <div class="vertical-text nav__link">
-                    <div class="rotated">
+            <div class="nav__left-top js-nav__panels">
+                <div class="main-nav__vertical-text js-nav__link">
+                    <div class="main-nav__rotated-text js-nav__link">
                         <h2 class="normal">About this site</h2>
                     </div>
-                    <div class="icons nav__link">
+                    <div class="js-nav__link">
                         <img src="images/about_icon.svg">
                     </div>
                 </div>
-                <div class="about-text">
-                    <p class="nav__link">The type setting is the beautifully geometric (and open source) <a>Cooper Hewitt</a>.</p>
-                    <p class="nav__link">Iconography is mostly by the inventive <a>XXX XXX</a>.</p>
-                    <p class="nav__link">Animations are page transitions were created using <a>Barba.JS</a> and the <a>GSAP animation platform</a>.</p>
+                <div class="main-nav__about-text">
+                    <p class="js-nav__link">The type setting is the beautifully geometric (and open source) <a href="">Cooper Hewitt</a>.</p>
+                    <p class="js-nav__link">Iconography is mostly by the inventive <a href="">XXX XXX</a>.</p>
+                    <p class="js-nav__link">Animations are page transitions were created using <a href="">Barba.JS</a> and the <a href="">GSAP animation platform</a>.</p>
                 </div>
             </div>
 
-            <div class="nav__left-bottom nav__panels">
-                <div class="vertical-text nav__element">
-                    <div class="rotated">
+            <div class="nav__left-bottom js-nav__panels">
+                <div class="main-nav__vertical-text js-nav__element">
+                    <div class="main-nav__rotated-text js-nav__link">
                         <h2 class="normal">Contact Me</h2>
                     </div>
-                    <img src="images/contact_icon.svg">
+                    <div class="js-nav__link">
+                        <img src="images/contact_icon.svg">
+                    </div>
                 </div>
-                <div class="menu-contact">
-                    <div class="contact-tiles nav__element">
-                        <div id="contact-icon"><img src="images/mail.svg"></div>
+                <div class="main-nav__menu-contact">
+                    <div class="contact-tiles js-nav__element">
+                        <div class="contact-icon"><img src="images/mail.svg"></div>
                         <p>tlemick@gmail.com</p>
                     </div>
-                    <div class="contact-tiles nav__element">
-                        <div id="contact-icon"><img src="images/phone.svg"></div>
+                    <div class="contact-tiles js-nav__element">
+                        <div class="contact-icon"><img src="images/phone.svg"></div>
                         <p>+1-617-686-1863</p>
                     </div>
-                    <div class="contact-tiles nav__element">
-                        <div id="contact-icon"><img src="images/li.svg"></div>
+                    <div class="contact-tiles js-nav__element">
+                        <div class="contact-icon"><img src="images/li.svg"></div>
                         <p>linkedin.com/tlemick</p>
                     </div>
                 </div>
             </div>
-        </aside>
+        </div>
 
         <main data-barba="container" data-barba-namespace="home">
 
-            <div class="hero-image">
+            <div class="hero__image">
 
-                <div class="hero-intro">
-                    <div class="line">
+                <div class="hero__intro">
+                    <div class="hero__intro--line js-line">
                         <h1>hello!</h1>
                     </div>
-                    <div class="line">
+                    <div class="hero__intro--line js-line">
                         <h1>I’m Travis,</h1>
                     </div>
-                    <div class="line spacer">
+                    <div class="hero__intro--line js-line hero__intro--spacer">
                         <h1>a creator of engaging</h1>
                     </div>
-                    <div class="line">
+                    <div class="hero__intro--line js-line">
                         <h1>digital experiences.</h1>
                     </div>
-                    <img src="images/down.svg">
+                    <div class="hero__intro--continue">
+                        <img src="images/scroll_down_arrow.svg">
+                        <p class="hero__intro--subtitle">scroll down</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="selected-works">
-                <div class="selected-works__header">
+            <div class="case-stack">
+                <div class="case-stack__header">
                     <h1>Selected <span class="semibold">Works</span></h1>
                     <p>These are the projects that helped shape me.  Some are personal, some professional, but all excellent vehicles for growth and fulfillment.</p>
                 </div>
             </div>
 
-            <div class="selected-works__tile margin10">
-                <a class="selected-works__image opera-link smg" href="operatists.html">
+            <div class="case margin10">
+                <a class="case__image opera-link smg" href="operatists.html">
                     <img src="images/SMG_splash.png">
                 </a>
-                <div class="selected-works__sub-head">
-                    <h2 class="thin item-a">01</h2>
+                <div class="case__sub-head">
+                    <h2 class="case__number thin item-a">01</h2>
                     <a class="opera-link item-b" href="operatists.html"><h2 class="normal">The Stock Market Game</h2></a>
-                    <p class="item-c">Helping students form goals and develop a framework for decisions relating to securities trading.</p>
+                    <p class="case__description item-c">Helping students form goals and develop a framework for decisions relating to securities trading.</p>
                     <a class="opera-link item-d" href="operatists.html"><img src='images/up_right.svg' height="48px"></a>
                 </div>
             </div>
 
-            <div class="selected-works__tile">
-                <a class="selected-works__image zeguro" href="zeguro.html">
+            <div class="case">
+                <a class="case__image zeguro" href="operatists.html">
                     <img src="images/zeguro_splash.png">
                 </a>
-                <div class="selected-works__sub-head">
-                    <h2 class="thin item-a">02</h2>
-                    <a class="item-b" href="zeguro.html"><h2 class="normal">Zeguro</h2></a>
-                    <p class="item-c">Creating a cyber-security defense & education platform to strengthen small to medium businesses.</p>
-                    <a class="item-d" href="zeguro.html"><img src='images/up_right.svg' height="48px"></a>
+                <div class="case__sub-head">
+                    <h2 class="case__number thin item-a">02</h2>
+                    <a class="case__title item-b" href="operatists.html"><h2 class="normal">Zeguro</h2></a>
+                    <p class="case__description item-c">Creating a cyber-security defense & education platform to strengthen small to medium businesses.</p>
+                    <a class="case__arrow item-d" href="operatists.html"><img src='images/up_right.svg' height="48px"></a>
                 </div>
             </div>
 
-            <div class="selected-works__tile">
-                <a class="selected-works__image opera" href="operatists.html">
+            <div class="case">
+                <a class="case__image opera" href="operatists.html">
                     <img src="images/Opera_splash.png">
                 </a>
-                <div class="selected-works__sub-head">
-                    <h2 class="thin item-a">03</h2>
-                    <a class="item-b" href="zeguro.html"><h2 class="normal">Orbits of the Operatists</h2></a>
-                    <p class="item-c">Mapping the intersection of culture, nationalism, and operatic premieres. A project designed to learn R.</p>
-                    <a class="item-d" href="zeguro.html"><img src='images/up_right.svg' height="48px"></a>
+                <div class="case__sub-head">
+                    <h2 class="case__number thin item-a">03</h2>
+                    <a class="case__title item-b" href="operatists.html"><h2 class="normal">Orbits of the Operatists</h2></a>
+                    <p class="case__description item-c">Mapping the intersection of culture, nationalism, and operatic premieres. A project designed to learn R.</p>
+                    <a class="case__arrow item-d" href="operatists.html"><img src='images/up_right.svg' height="48px"></a>
                 </div>
             </div>
 
-            <div class="selected-works__tile">
-                <a class="selected-works__image wetravel" href="operatists.html">
+            <div class="case">
+                <a class="case__image wetravel" href="operatists.html">
                     <img src="images/wetravel_splash.png">
                 </a>
-                <div class="selected-works__sub-head">
-                    <h2 class="thin item-a">04</h2>
-                    <a class="item-b" href="zeguro.html"><h2 class="normal">WeTravel</h2></a>
-                    <p class="item-c">An update to a piece of UI that would build more confidence in the product, leading to a higher conversion rate on the CTA.</p>
-                    <a class="item-d" href="zeguro.html"><img src='images/up_right.svg' height="48px"></a>
+                <div class="case__sub-head">
+                    <h2 class="case__number thin item-a">04</h2>
+                    <a class="case__title item-b" href="operatists.html"><h2 class="normal">WeTravel</h2></a>
+                    <p class="case__description item-c">An update to a piece of UI that would build more confidence in the product, leading to a higher conversion rate on the CTA.</p>
+                    <a class="case__arrow item-d" href="operatists.html"><img src='images/up_right.svg' height="48px"></a>
                 </div>
             </div>
 
-            <div class="selected-works__tile">
-                <a class="selected-works__image transit" href="operatists.html">
+            <div class="case">
+                <a class="case__image transit" href="operatists.html">
                     <img src="images/trains_splash.png">
                 </a>
-                <div class="selected-works__sub-head">
-                    <h2 class="thin item-a">05</h2>
-                    <a class="item-b" href="zeguro.html"><h2 class="normal">Streetcars of S.F.</h2></a>
-                    <p class="item-c">A mapping project that animates and narrates the history of light rail development in the SF Bay area.</p>
-                    <a class="item-d" href="zeguro.html"><img src='images/up_right.svg' height="48px"></a>
+                <div class="case__sub-head">
+                    <h2 class="case__number thin item-a">05</h2>
+                    <a class="case__title item-b" href="operatists.html"><h2 class="normal">Streetcars of S.F.</h2></a>
+                    <p class="case__description item-c">A mapping project that animates and narrates the history of light rail development in the SF Bay area.</p>
+                    <a class="case__arrow item-d" href="operatists.html"><img src='images/up_right.svg' height="48px"></a>
                 </div>
             </div>
 
-            <div class="selected-works">
-                <div class="selected-works__footer">
+            <div class="case-stack">
+                <div class="case-stack__footer">
                     <h1>Let's build <span class="semibold">together</span></h1>
                     <p>Say hello!  I love chatting about new projects and learning experiences.  Perhaps our goals are in alignment!</p>
                     <div>
                         <div class="contact-tiles">
-                            <div id="contact-icon"><img src="images/mail.svg"></div>
+                            <div class="contact-icon"><img src="images/mail.svg"></div>
                             <p>tlemick@gmail.com</p>
                         </div>
                         <div class="contact-tiles">
-                            <div id="contact-icon"><img src="images/li.svg"></div>
+                            <div class="contact-icon"><img src="images/li.svg"></div>
                             <p>linkedin.com/tlemick</p>
                         </div>
                     </div>
