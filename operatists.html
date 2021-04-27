@@ -13,74 +13,71 @@
         <ul class="transition">
             <li></li>
         </ul>
-        <header>
-            <div class="header__left">
-                <div class="me__home">
-                    <div class="me__home__text">
-                    </div>
-                </div>
+        <header class="header">
+            <div class="header__nav">
+                <button class="header__toggle header__toggle--menu">menu</button>
+                <button class="header__toggle header__toggle--mode">mode</button>
             </div>
-            <div class="header__right">
-                <button class="nav_toggle" id="nav">menu</button>
-                <button class="nav_toggle toggle">mode</button>
-            </div>
-        </header> 
+        </header>
 
-        <aside id="mb_nav" class="nav">
-            <div class="nav__right nav__panels">
+        <div class="main-nav">
+            <div class="nav__right js-nav__panels">
                 <ul>
-                    <img class="nav__link" src="images/nav_icon.svg">
-                    <li><a class="nav__link" href="">Home</a></li>
-                    <li><a class="nav__link" href="">Portfolio</a></li>
-                        <ul id="submenu">
-                            <li><a class="nav__link">Stock Market Game</a></li>
-                            <li><a class="nav__link">Zeguro</a></li>
-                            <li><a class="nav__link">Orbits of the Operatists</a></li>
-                            <li><a class="nav__link">WeTravel</a></li>
-                            <li><a class="nav__link">Streetcars of San Francisco</a></li>
-                        </ul>
-                    <li><a class="nav__link" href="">Contact</a></li>
+                    <img class="js-nav__link" src="images/nav_icon.svg">
+                    <li><a class="main-nav__major-link js-nav__link" href="">Home</a></li>
+                    <li><a class="main-nav__major-link js-nav__link" href="">Portfolio</a></li>
+                    <ul>
+                        <li><a class="main-nav__minor-link js-nav__link" href="operatists.html">Stock Market Game</a></li>
+                        <li><a class="main-nav__minor-link js-nav__link" href="operatists.html">Zeguro</a></li>
+                        <li><a class="main-nav__minor-link js-nav__link" href="operatists.html">Orbits of the Operatists</a></li>
+                        <li><a class="main-nav__minor-link js-nav__link" href="operatists.html">WeTravel</a></li>
+                        <li><a class="main-nav__minor-link js-nav__link" href="operatists.html">Streetcars of San Francisco</a></li>
+                    </ul>
+                    <li><a class="main-nav__major-link js-nav__link" href="">Contact</a></li>
                 </ul>
             </div>
-            <div class="nav__left-top nav__panels nav__link">
-                <div class="vertical-text nav__link">
-                    <div class="rotated">
+            <div class="nav__left-top js-nav__panels">
+                <div class="main-nav__vertical-text js-nav__link">
+                    <div class="main-nav__rotated-text js-nav__link">
                         <h2 class="normal">About this site</h2>
                     </div>
-                    <div class="icons nav__link">
+                    <div class="js-nav__link">
                         <img src="images/about_icon.svg">
                     </div>
                 </div>
-                <div class="about-text">
-                    <p class="nav__link">The type setting is the beautifully geometric (and open source) <a>Cooper Hewitt</a>.</p>
-                    <p class="nav__link">Iconography is mostly by the inventive <a>XXX XXX</a>.</p>
-                    <p class="nav__link">Animations are page transitions were created using <a>Barba.JS</a> and the <a>GSAP animation platform</a>.</p>
+                <div class="main-nav__about-text">
+                    <p class="js-nav__link">The type setting is the beautifully geometric (and open source) <a href="">Cooper Hewitt</a>.</p>
+                    <p class="js-nav__link">Iconography is mostly by the inventive <a href="">XXX XXX</a>.</p>
+                    <p class="js-nav__link">Animations are page transitions were created using <a href="">Barba.JS</a> and the <a href="">GSAP animation platform</a>.</p>
                 </div>
             </div>
 
-            <div class="nav__left-bottom nav__panels">
-                <div class="vertical-text nav__element">
-                    <div class="rotated">
+            <div class="nav__left-bottom js-nav__panels">
+                <div class="main-nav__vertical-text js-nav__element">
+                    <div class="main-nav__rotated-text js-nav__link">
                         <h2 class="normal">Contact Me</h2>
                     </div>
-                    <img src="images/contact_icon.svg">
+                    <div class="js-nav__link">
+                        <img src="images/contact_icon.svg">
+                    </div>
                 </div>
-                <div class="menu-contact">
-                    <div class="contact-tiles nav__element">
-                        <div id="contact-icon"><img src="images/mail.svg"></div>
+                <div class="main-nav__menu-contact">
+                    <div class="contact-tiles js-nav__element">
+                        <div class="contact-icon"><img src="images/mail.svg"></div>
                         <p>tlemick@gmail.com</p>
                     </div>
-                    <div class="contact-tiles nav__element">
-                        <div id="contact-icon"><img src="images/phone.svg"></div>
+                    <div class="contact-tiles js-nav__element">
+                        <div class="contact-icon"><img src="images/phone.svg"></div>
                         <p>+1-617-686-1863</p>
                     </div>
-                    <div class="contact-tiles nav__element">
-                        <div id="contact-icon"><img src="images/li.svg"></div>
+                    <div class="contact-tiles js-nav__element">
+                        <div class="contact-icon"><img src="images/li.svg"></div>
                         <p>linkedin.com/tlemick</p>
                     </div>
                 </div>
             </div>
-        </aside>
+        </div>
+
 
         <main data-barba="container" data-barba-namespace="home">
             <div class="study_back">
@@ -115,7 +112,7 @@
                     <h2>the Work</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. </p>
                 </div>
-                </div>
+            </div>
             </div>
             <div class="case_images">
                 <div class="cover">
@@ -148,14 +145,14 @@
                     <div>
                         <h4>Previous Project</h4>
                         <a href="/zeguro.html"><h2>Zeguro</h2></a>
-                    </div> 
+                    </div>
                 </div>
                 <div class="footer__nav__right">
                     <div>
                         <h4>Next Project</h4>
                         <a href="/wetravel.html"><h2>WeTravel</h2></a>
-                    </div>        
-                    <img src="images/arrow_right.svg">            
+                    </div>
+                    <img src="images/arrow_right.svg">
                 </div>
             </div>
         </main>
