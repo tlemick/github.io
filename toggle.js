@@ -160,34 +160,32 @@ function animateOpenNav() {
 openNav();
 
 
-
 //--------Case study image reveal on scroll -----------
-
 gsap.registerPlugin(ScrollTrigger)
 scrollImages();
 
 function scrollImages() {
-    let revealContainers = document.querySelectorAll(".cover");
+    let revealContainers = document.querySelectorAll(".overlay");
 
     revealContainers.forEach((container) => {
-        let image = container.querySelector("img");
+        let image = container.querySelector(".overlay");
         let tl = gsap.timeline({
             scrollTrigger: {
                 trigger: container,
-                toggleActions: "play none none none"
+                toggleActions: "play none none none",
+                start: "center bottom",
             }
         });
-
-        tl.set(container, { autoAlpha: 1 });
-        tl.from(container, 1.5, {
-            xPercent: -100,
-            ease: Power2.out
-        });
-        tl.from(image, 1.5, {
+        tl.fromTo(container, {
+            skewX: 30,
+            scale: 1.4
+          }, {
+            skewX: 0,
             xPercent: 100,
-            scale: 1.1,
-            delay: -1.5,
-            ease: Power2.out
-        });
+            duration: 2,
+            transformOrigin: "0% 100%",
+            ease: Power3.out
+          });
     });
 }
+
