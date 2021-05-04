@@ -45,26 +45,30 @@ textRev.from(".js-line h1", 1.8, {
 });
 
 
+const heroReveal = gsap.timeline();
+
+heroReveal.fromTo(".study__hero--overlay", 1.2, {
+  skewX: 30,
+  scale: 1.4 }, {
+    skewX: 0,
+    xPercent: 100,
+    duration: 2,
+    transformOrigin: "0% 100%",
+    ease: Power3.out
+});
+
+
 //-------- Case Study Tiles Transition ---------------
-/*I stopped working on this because it was causing some sort of interference with the other gsap functions
-    What I wanted was a function that would handle 3 animations on the case tiles
-*/
-
-
 /*
-function hoverTile() {
-    var navTl = document.getElementsByClassName(".opera-link");
-    navTl.addEventListener("mouseover", function() {
-        gsap.to(".opera-link", {
-            opacity: .2, 
-            duration: 1
-        });
-    })
-    }
-hoverTile();
+var navTl = document.getElementsByClassName("opera-link");
+ navTl[0].addEventListener("mouseover", function() {
+    gsap.to(".opera-link", {
+        opacity: .2, 
+        duration: 1
+   });
+});
+
 */
-
-
 
 //-------- Page Transition ---------------
 
@@ -83,8 +87,14 @@ function delay(n) {
     });
 }
 
-barba.init({
 
+//------------------Inserting barba prefetch--------------
+barba.use(barbaPrefetch);
+
+
+//------------------Barba Page Transitions--------------
+barba.init({
+    
     sync: true,
 
     transitions: [{
@@ -188,4 +198,3 @@ function scrollImages() {
           });
     });
 }
-
