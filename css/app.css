@@ -801,7 +801,7 @@ button {
   height: 100%;
 }
 
-.operatists {
+.operatists--hero {
   background-image: url(../images/coline.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -809,7 +809,59 @@ button {
 }
 
 @media (max-width: 599px) {
-  .operatists {
+  .operatists--hero {
+    background-position: center;
+  }
+}
+
+.zeguro--hero {
+  background-image: url(../images/fly-d.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+@media (max-width: 599px) {
+  .zeguro--hero {
+    background-position: center;
+  }
+}
+
+.transit--hero {
+  background-image: url(../images/streetcar.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+@media (max-width: 599px) {
+  .transit--hero {
+    background-position: center;
+  }
+}
+
+.wetravel--hero {
+  background-image: url(../images/balloons.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+@media (max-width: 599px) {
+  .wetravel--hero {
+    background-position: center;
+  }
+}
+
+.stockmarketgame--hero {
+  background-image: url(../images/climb.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+@media (max-width: 599px) {
+  .stockmarketgame--hero {
     background-position: center;
   }
 }

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/app.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@barba/prefetch"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+    <title>Home</title>
+</head>
+    <body data-barba="wrapper">
+        <ul class="transition">
+            <li></li>
+        </ul>
+        <header class="header">
+            <div class="header__nav">
+                <button class="header__toggle header__toggle--menu">menu</button>
+                <button class="header__toggle header__toggle--mode">mode</button>
+            </div>
+        </header>
+
+        <div class="main-nav" style="z-index: 5;">
+            <div class="nav__right js-nav__panels">
+                <ul>
+                    <img class="js-nav__link" src="images/nav_icon.svg">
+                    <li><a class="main-nav__major-link js-nav__link" href="index.html">Home</a></li>
+                    <li><a class="main-nav__major-link js-nav__link" href="">Portfolio</a></li>
+                    <ul>
+                        <li><a class="main-nav__minor-link js-nav__link" href="stockmarketgame.html">Stock Market Game</a></li>
+                        <li><a class="main-nav__minor-link js-nav__link" href="zeguro.html">Zeguro</a></li>
+                        <li><a class="main-nav__minor-link js-nav__link" href="operatists.html">Orbits of the Operatists</a></li>
+                        <li><a class="main-nav__minor-link js-nav__link" href="wetravel.html">WeTravel</a></li>
+                        <li><a class="main-nav__minor-link js-nav__link" href="transit.html">Streetcars of San Francisco</a></li>
+                    </ul>
+                    <li><a class="main-nav__major-link js-nav__link" href="">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav__left-top js-nav__panels">
+                <div class="main-nav__vertical-text js-nav__link">
+                    <div class="main-nav__rotated-text js-nav__link">
+                        <h2 class="normal">About this site</h2>
+                    </div>
+                    <div class="js-nav__link">
+                        <img src="images/about_icon.svg">
+                    </div>
+                </div>
+                <div class="main-nav__about-text">
+                    <p class="js-nav__link">The type setting is the beautifully geometric (and open source) <a href="">Cooper Hewitt</a>.</p>
+                    <p class="js-nav__link">Iconography is mostly by the inventive <a href="">XXX XXX</a>.</p>
+                    <p class="js-nav__link">Animations are page transitions were created using <a href="">Barba.JS</a> and the <a href="">GSAP animation platform</a>.</p>
+                </div>
+            </div>
+
+            <div class="nav__left-bottom js-nav__panels">
+                <div class="main-nav__vertical-text js-nav__element">
+                    <div class="main-nav__rotated-text js-nav__link">
+                        <h2 class="normal override">Contact Me</h2>
+                    </div>
+                    <div class="js-nav__link">
+                        <img src="images/contact_icon.svg">
+                    </div>
+                </div>
+                <div class="main-nav__menu-contact">
+                    <div class="contact-tiles js-nav__element">
+                        <div class="contact-icon"><img src="images/mail.svg"></div>
+                        <p>tlemick@gmail.com</p>
+                    </div>
+                    <div class="contact-tiles js-nav__element">
+                        <div class="contact-icon"><img src="images/phone.svg"></div>
+                        <p>+1-617-686-1863</p>
+                    </div>
+                    <div class="contact-tiles js-nav__element">
+                        <div class="contact-icon"><img src="images/li.svg"></div>
+                        <p>linkedin.com/tlemick</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <main data-barba="container" data-barba-namespace="home">
+            <a href="index.html">
+                <div class="study_back">
+                    <img src="images/back.svg">
+                </div>
+            </a>
+            <div class="study__hero transit--hero">
+                <div class="study__hero--wrapper">
+                    <div class="study__hero--overlay overlay"></div>
+                </div>
+            </div>
+            <div class="study__headline">
+                <h1 class="study__headline__header">the Streetcar History of San Francisco</h1>
+                <div class="study__headline__subheader">
+                    <h4>Website concept</h4>
+                    <h4>Client: personal project</h4>
+                </div>
+            </div>
+
+            <div class="study__metrics">
+                <div class="study__metrics__skills">
+                    <ul>
+                        <li>UX Design</li>
+                        <li>Map integrations</li>
+                        <li>Interaction Design</li>
+                        <li>GeoJson</li>
+                    </ul>
+                </div>
+                <div class="study__metrics__project">
+                    <h2>the Project</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. </p>
+                </div>
+                <div class="study__metrics__work">
+                    <h2>the Work</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. </p>
+                </div>
+            </div>
+            </div>
+            <div class="case_images">
+                <div class="cover">
+                    <img src="images/opera_home.png">
+                    <div class="overlay"></div>
+                </div>
+            </div>
+            <div class="case_images">
+                <div class="cover">
+                    <img src="images/operatists_2.png">
+                    <div class="overlay"></div>
+                </div>
+            </div>
+            <div class="case_images">
+                <div class="cover">
+                    <img src="images/operatists_3.png">
+                    <div class="overlay"></div>
+                </div>
+            </div>
+            <div class="case_images">
+                <div class="cover">
+                    <img src="images/operatists_4.png">
+                    <div class="overlay"></div>
+                </div>
+            </div>
+            <div class="case_images">
+                <div class="cover">
+                    <img src="images/operatists_5.png">
+                    <div class="overlay"></div>
+                </div>
+            </div>
+            <div class="footer__nav">
+                <div class="footer__nav__left">
+                    <img src="images/arrow_left.svg">
+                    <div>
+                        <h4>Previous Project</h4>
+                        <a href="/wetravel.html"><h2>WeTravel</h2></a>
+                    </div>
+                </div>
+                <div class="footer__nav__right">
+                    <div>
+                        <h4>Next Project</h4>
+                        <a href="/stockmarketgame.html"><h2>the Stock Market Game</h2></a>
+                    </div>
+                    <img src="images/arrow_right.svg">
+                </div>
+            </div>
+        </main>
+    </body>
+    <script src="toggle.js"></script>
+</html>

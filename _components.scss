@@ -517,8 +517,48 @@ button {
     height: 100%;
 }
 
-.operatists {
+.operatists--hero {
     background-image: url(../images/coline.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    @include for-phone-only {
+        background-position: center;
+    }
+}
+
+.zeguro--hero {
+    background-image: url(../images/fly-d.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    @include for-phone-only {
+        background-position: center;
+    }
+}
+
+.transit--hero {
+    background-image: url(../images/streetcar.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    @include for-phone-only {
+        background-position: center;
+    }
+}
+
+.wetravel--hero {
+    background-image: url(../images/balloons.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    @include for-phone-only {
+        background-position: center;
+    }
+}
+
+.stockmarketgame--hero {
+    background-image: url(../images/climb.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     box-sizing: border-box;
