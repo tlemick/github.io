@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="css/app.css" rel="stylesheet">
-        <script src="https://unpkg.com/@barba/core"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@barba/prefetch"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>        
-        <title>Home</title>
-    </head>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/app.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@barba/prefetch"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+    <title>Home</title>
+</head>
     <body data-barba="wrapper">
         <ul class="transition">
             <li></li>
@@ -21,11 +22,11 @@
             </div>
         </header>
 
-        <div class="main-nav">
+        <div class="main-nav" style="z-index: 5;">
             <div class="nav__right js-nav__panels">
                 <ul>
                     <img class="js-nav__link" src="images/nav_icon.svg">
-                    <li><a class="main-nav__major-link js-nav__link" href="">Home</a></li>
+                    <li><a class="main-nav__major-link js-nav__link" href="index.html">Home</a></li>
                     <li><a class="main-nav__major-link js-nav__link" href="">Portfolio</a></li>
                     <ul>
                         <li><a class="main-nav__minor-link js-nav__link" href="operatists.html">Stock Market Game</a></li>
@@ -56,7 +57,7 @@
             <div class="nav__left-bottom js-nav__panels">
                 <div class="main-nav__vertical-text js-nav__element">
                     <div class="main-nav__rotated-text js-nav__link">
-                        <h2 class="normal">Contact Me</h2>
+                        <h2 class="normal override">Contact Me</h2>
                     </div>
                     <div class="js-nav__link">
                         <img src="images/contact_icon.svg">
@@ -88,7 +89,7 @@
             </a>
             <div class="study__hero operatists">
                 <div class="study__hero--wrapper">
-                    <div class="study__hero--overlay"></div>
+                    <div class="study__hero--overlay overlay"></div>
                 </div>
             </div>
             <div class="study__headline">

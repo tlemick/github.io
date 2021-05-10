@@ -4,15 +4,40 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/app.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script src="https://unpkg.com/@barba/core"></script>
         <script src="https://cdn.jsdelivr.net/npm/@barba/prefetch"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
-        
         <title>Home</title>
+
+        <style>
+            .no-js #loader {
+                display: none;
+            }
+
+            .js #loader {
+                display: block;
+                position: absolute;
+                left: 100px;
+                top: 0;
+            }
+
+            .se-pre-con {
+                position: fixed;
+                left: 0px;
+                top: 0px;
+                width: 100%;
+                height: 100%;
+                z-index: 100000;
+                background: url(images/preloader.gif) center no-repeat var(--background-color);
+            }
+        </style>
     </head>
 
-    <body data-barba="wrapper">
+    <body data-barba="wrapper" class="light-theme">
+        <div class="se-pre-con"></div>
+
         <ul class="transition">
             <li></li>
         </ul>
@@ -24,11 +49,11 @@
             </div>
         </header>
 
-        <div class="main-nav">
+        <div class="main-nav" style="z-index: 5;">
             <div class="nav__right js-nav__panels">
                 <ul>
                     <img class="js-nav__link" src="images/nav_icon.svg">
-                    <li><a class="main-nav__major-link js-nav__link" href="">Home</a></li>
+                    <li><a class="main-nav__major-link js-nav__link" href="index.html">Home</a></li>
                     <li><a class="main-nav__major-link js-nav__link" href="">Portfolio</a></li>
                         <ul>
                             <li><a class="main-nav__minor-link js-nav__link" href="operatists.html">Stock Market Game</a></li>
@@ -59,7 +84,7 @@
             <div class="nav__left-bottom js-nav__panels">
                 <div class="main-nav__vertical-text js-nav__element">
                     <div class="main-nav__rotated-text js-nav__link">
-                        <h2 class="normal">Contact Me</h2>
+                        <h2 class="normal override">Contact Me</h2>
                     </div>
                     <div class="js-nav__link">
                         <img src="images/contact_icon.svg">
@@ -119,8 +144,8 @@
                 </a>
                 <div class="case__sub-head">
                     <h2 class="case__number thin item-a">01</h2>
-                    <a class="opera-link item-b" href="operatists.html"><h2 class="normal">The Stock Market Game</h2></a>
-                    <p class="case__description item-c">Helping students form goals and develop a framework for decisions relating to securities trading.</p>
+                    <a class="opera-link item-b" href="operatists.html"><h2 class="case__title normal">The Stock Market Game</h2></a>
+                    <p class="case__description item-c">Helping students form goals and develop a framework for decisions to better navigate securities trading.</p>
                     <a class="opera-link item-d" href="operatists.html"><img src='images/up_right.svg' height="48px"></a>
                 </div>
             </div>
@@ -131,7 +156,7 @@
                 </a>
                 <div class="case__sub-head">
                     <h2 class="case__number thin item-a">02</h2>
-                    <a class="case__title item-b" href="operatists.html"><h2 class="normal">Zeguro</h2></a>
+                    <a class="item-b" href="operatists.html"><h2 class="case__title normal">Zeguro</h2></a>
                     <p class="case__description item-c">Creating a cyber-security defense & education platform to strengthen small to medium businesses.</p>
                     <a class="case__arrow item-d" href="operatists.html"><img src='images/up_right.svg' height="48px"></a>
                 </div>
@@ -143,7 +168,7 @@
                 </a>
                 <div class="case__sub-head">
                     <h2 class="case__number thin item-a">03</h2>
-                    <a class="case__title item-b" href="operatists.html"><h2 class="normal">Orbits of the Operatists</h2></a>
+                    <a class="item-b" href="operatists.html"><h2 class="case__title normal">Orbits of the Operatists</h2></a>
                     <p class="case__description item-c">Mapping the intersection of culture, nationalism, and operatic premieres. A project designed to learn R.</p>
                     <a class="case__arrow item-d" href="operatists.html"><img src='images/up_right.svg' height="48px"></a>
                 </div>
@@ -155,7 +180,7 @@
                 </a>
                 <div class="case__sub-head">
                     <h2 class="case__number thin item-a">04</h2>
-                    <a class="case__title item-b" href="operatists.html"><h2 class="normal">WeTravel</h2></a>
+                    <a class="item-b" href="operatists.html"><h2 class="case__title normal">WeTravel</h2></a>
                     <p class="case__description item-c">An update to a piece of UI that would build more confidence in the product, leading to a higher conversion rate on the CTA.</p>
                     <a class="case__arrow item-d" href="operatists.html"><img src='images/up_right.svg' height="48px"></a>
                 </div>
@@ -167,7 +192,7 @@
                 </a>
                 <div class="case__sub-head">
                     <h2 class="case__number thin item-a">05</h2>
-                    <a class="case__title item-b" href="operatists.html"><h2 class="normal">Streetcars of S.F.</h2></a>
+                    <a class="item-b" href="operatists.html"><h2 class="case__title normal">Streetcars of S.F.</h2></a>
                     <p class="case__description item-c">A mapping project that animates and narrates the history of light rail development in the SF Bay area.</p>
                     <a class="case__arrow item-d" href="operatists.html"><img src='images/up_right.svg' height="48px"></a>
                 </div>
