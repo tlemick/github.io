@@ -99,3 +99,10 @@
         scale: .9;
     }
 }
+
+.iframe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
