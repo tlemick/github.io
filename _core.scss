@@ -34,6 +34,22 @@
   }
 
 
+  @font-face {
+    font-family: 'Whyte Inktrap';
+    src: url('../fonts/WhyteInktrap-ExtraLight.eot');
+    src: local('../fonts/Whyte Inktrap ExtraLight'), local('WhyteInktrap-ExtraLight'),
+        url('../fonts/WhyteInktrap-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/WhyteInktrap-ExtraLight.woff2') format('woff2'),
+        url('../fonts/WhyteInktrap-ExtraLight.woff') format('woff'),
+        url('../fonts/WhyteInktrap-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+.forum {
+    font-family: 'Whyte Inktrap';
+    font-weight: 200;
+}
 
 /* --------Breakpoints ------------------------------------------------*/
 
@@ -156,6 +172,8 @@ a {
 .colorful a {
     color: #DAA9A9;
 }
+
+
 
 
 /*-------------------------Body Defaults----------------*/
