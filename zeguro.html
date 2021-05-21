@@ -17,8 +17,14 @@
         </ul>
         <header class="header">
             <div class="header__nav">
-                <button class="header__toggle header__toggle--menu">menu</button>
-                <button class="header__toggle header__toggle--mode">mode</button>
+                <div class="header__toggle semibold header__toggle--menu">
+                    <p class="menu-rotated">Menu</p>
+                    <img src="images/menu_icon.svg">
+                </div>
+                <div class="header__toggle semibold header__toggle--mode">
+                    <p class="menu-rotated">Lighting</p>
+                    <img src="images/light_icon.svg">
+                </div>
             </div>
         </header>
 
@@ -26,16 +32,16 @@
             <div class="nav__right js-nav__panels">
                 <ul>
                     <img class="js-nav__link" src="images/nav_icon.svg">
-                    <li><a class="main-nav__major-link js-nav__link" href="index.html">Home</a></li>
-                    <li><a class="main-nav__major-link js-nav__link" href="index.html">Portfolio</a></li>
-                    <ul>
-                        <li><a class="main-nav__minor-link js-nav__link" href="stockmarketgame.html">Stock Market Game</a></li>
-                        <li><a class="main-nav__minor-link js-nav__link" href="zeguro.html">Zeguro</a></li>
-                        <li><a class="main-nav__minor-link js-nav__link" href="operatists.html">Orbits of the Operatists</a></li>
-                        <li><a class="main-nav__minor-link js-nav__link" href="wetravel.html">WeTravel</a></li>
-                        <li><a class="main-nav__minor-link js-nav__link" href="transit.html">Streetcars of San Francisco</a></li>
-                    </ul>
-                    <li><a class="main-nav__major-link js-nav__link" href="index.html">Contact</a></li>
+                    <li><a class="forum main-nav__major-link js-nav__link" href="index.html">Home</a></li>
+                    <li><a class="forum main-nav__major-link js-nav__link" href="">Portfolio</a></li>
+                        <ul>
+                            <li><a class="forum main-nav__minor-link js-nav__link" href="stockmarketgame.html">Stock Market Game</a></li>
+                            <li><a class="forum main-nav__minor-link js-nav__link" href="zeguro.html">Zeguro</a></li>
+                            <li><a class="forum main-nav__minor-link js-nav__link" href="operatists.html">Orbits of the Operatists</a></li>
+                            <li><a class="forum main-nav__minor-link js-nav__link" href="wetravel.html">WeTravel</a></li>
+                            <li><a class="forum main-nav__minor-link js-nav__link" href="transit.html">Streetcars of San Francisco</a></li>
+                        </ul>
+                    <li><a class="forum main-nav__major-link js-nav__link" href="">Contact</a></li>
                 </ul>
             </div>
             <div class="nav__left-top js-nav__panels">
@@ -81,10 +87,12 @@
         </div>
 
 
+
         <main data-barba="container" data-barba-namespace="home">
             <a href="index.html">
                 <div class="study_back">
-                    <img src="images/back.svg">
+                    <p class="menu-rotated">Home</p>
+                    <img src="images/home_icon.svg">
                 </div>
             </a>
             <div class="study__hero zeguro--hero">

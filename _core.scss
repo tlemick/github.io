@@ -66,39 +66,47 @@
 
 @media (prefers-color-scheme: dark) {
     body {
-        --background-color: #555555;
-        --text-color: #F3F3F3;
+        --text-color: #E3E3E3;
         --overlay: linear-gradient(0deg, rgba(11,29,105,0.7973390039609594) 28%, rgba(11,29,105,0.44439782749037116) 100%);
-        --darkener: brightness(0.8);
+        --darkener: brightness(0.6);
         --img-padding: hsl(0, 0%, 29%);
-        --footer-bg: #383838;
+        --footer-bg: hsl(313, 96%, 10%);
+        --background-color: hsl(312, 100%, 4%);
+        --hero-text-color: #c85aa5;
+        --header-bg: rgba(94, 94, 94, 0.58);
     }
     body.light-theme {
-        --background-color: #F3F3F3;
-        --text-color: #555555;
+        --background-color: #E3E3E3;
+        --text-color: hsl(313, 96%, 10%);
         --overlay: linear-gradient(0deg, rgba(243,243,243,1) 0%, rgba(243,243,243,0.5704482476584384) 53%, rgba(243,243,243,0.4780112728685224) 61%, rgba(243,243,243,0) 100%);
         --darkener: brightness(1);
-        --img-padding: hsl(0, 0%, 89%);
+        --img-padding: hsl(300, 3%, 72%);
         --footer-bg: #d3d3d3;
+        --hero-text-color: hsl(313, 96%, 10%);
+        --header-bg: rgba(255, 255, 255, 0.575);
     }
 }
 
 body {
-    --background-color: #F3F3F3;
-    --text-color: #555555;
+    --background-color: #E3E3E3;
+    --text-color: #320127;
     --overlay: linear-gradient(0deg, rgba(243,243,243,1) 0%, rgba(243,243,243,0.5704482476584384) 53%, rgba(243,243,243,0.4780112728685224) 61%, rgba(243,243,243,0) 100%);
     --darkener: brightness(1);
-    --img-padding: hsl(0, 0%, 89%);
+    --img-padding: hsl(300, 3%, 72%);
     --footer-bg: #d3d3d3;
+    --hero-text-color: #320127;
+    --header-bg: rgba(255, 255, 255, 0.575);
 }
 
 body.dark-theme {
-    --background-color: #555555;
-    --text-color: #F3F3F3;
+    --background-color: hsl(312, 100%, 4%);
+    --text-color: #E3E3E3;
     --overlay: linear-gradient(0deg, rgba(11,29,105,0.7973390039609594) 28%, rgba(11,29,105,0.44439782749037116) 100%);  
     --darkener: brightness(0.8);
     --img-padding: hsl(0, 0%, 29%);
-    --footer-bg: #383838;
+    --footer-bg: #320127;
+    --hero-text-color: #c85aa5;
+    --header-bg: rgba(94, 94, 94, 0.58);
 }
 
 
@@ -155,7 +163,7 @@ a {
 }
 
 .override {
-    color:#555555;
+    color:hsl(313, 96%, 10%);
 }
 
 
