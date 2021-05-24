@@ -14,7 +14,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 5px;
     @include for-tablet-landscape-up {
-        background-image: url(../images/hero_2.png);
+        background-image: url(../images/Marcus-architecture-samp-1.jpg);
         background-size: cover;
     }
 }
@@ -110,6 +110,7 @@
     img {
         width: 20px;
         margin-top: -.6em;
+        filter: var(--svg-filter);
     }
     @include for-phone-only {
         width: auto;
@@ -134,13 +135,13 @@
 
   .header__toggle:hover {
     p {
-        color: #800064;
+        color: #c85aa5;
         cursor: pointer;
     }
   }
   .header__toggle.active {
     p {
-        color: #753b69;
+        color: #c85aa5;
     }
   }
 

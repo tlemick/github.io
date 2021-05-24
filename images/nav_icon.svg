@@ -3,7 +3,7 @@
     <title>noun_id_2731179</title>
     <defs>
         <filter id="filter-1">
-            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 1.000000 0"></feColorMatrix>
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.196078 0 0 0 0 0.003922 0 0 0 0 0.152941 0 0 0 1.000000 0"></feColorMatrix>
         </filter>
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">

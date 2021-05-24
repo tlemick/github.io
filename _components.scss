@@ -24,30 +24,32 @@
 }
   
 .main-nav__major-link {
-    font-size: 2rem;
+    font-size: 3rem;
     line-height: 1.8;
     display: inline-block;
     list-style-type: none;
     padding: 0;
     margin: 0;
-    color: white;
+    color: var(--text-color);
     transform: translateY(-15px);
     opacity: 0;
     transition: all 0.25s ease;
-
+    @include for-phone-only {
+        font-size: 1.8rem;
+    }
     &:hover {
         color: #d647b7;
     }
 }
 
 .main-nav__minor-link {
-    font-size: 1.4em;
+    font-size: 2em;
     line-height: 1.8;
     display: inline-block;
     list-style-type: none;
     padding: 0;
     margin: 0;
-    color: white;
+    color: var(--text-color);
     transform: translateY(-15px);
     opacity: 0;
     transition: all 0.25s ease;
@@ -57,7 +59,7 @@
     }
 
     @include for-phone-only {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         margin-left: -1em;
     }
 }
@@ -73,7 +75,7 @@
     flex-direction: row;
     padding-right: 10%;
     background-color: #3f3d3e;
-        h2, p {
+    h2, p {
         color: white;
     }
     @include for-phone-only {
@@ -100,7 +102,7 @@
 }
 
 .nav__right {
-    background-color: #44283e;
+    background-color: white;
     grid-column: 2 / 3;
     grid-row: 1 / 3;
     transform: scaleY(0);
@@ -138,10 +140,11 @@
 
 .main-nav__about-text {
     padding-left: 3em;
-    padding-right: 3em;
+    padding-right: 6em;
+    margin-left: 1.5em;
     align-self: center;
     a {
-        color: #F0F0F0;
+        color: #d1c8cf;
         text-decoration: underline;
     }
     p {
@@ -156,7 +159,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin-left: 3em;
+    margin-left: 4.5em;
 }
 
 .main-nav__rotated-text {
@@ -164,7 +167,6 @@
     transform: rotate(-90deg);
     transform-origin: 0 0;
     padding-top: .7em;
-    padding-left: 2em;
 }
 
 
@@ -204,11 +206,10 @@
 
     &__footer {
         padding-bottom: 10em;
-        grid-column: 2 / 3;
-        max-width: 32em;
+        grid-column: 2 / 4;
+        max-width: 40em;
         text-align: left;
         justify-self: end;
-        margin-top: -4em;
         padding-top: 3em;
         h1 {
             margin-bottom: 0;
@@ -343,52 +344,52 @@
 
     .smg {
         img {
-            background-color: #CED6D9;
+            background-color: #cfccce;
             filter: var(--darkener);
-            transition: 1s;
+            transition: .5s;
         } 
         img:hover {
-            background-color: #969da0;
+            background-color: #978593;
         }
     }
     .zeguro {
         img {
-            background-color: #CDD8CC;
+            background-color: #cfccce;
             filter: var(--darkener);
-            transition: 1s;
+            transition: .5s;
         } 
         img:hover {
-            background-color: #828d81;
+            background-color: #978593;
         }
     }
     .opera {
         img {
-            background-color: #D3D1D8;
+            background-color: #cfccce;
             filter: var(--darkener);
-            transition: 1s;
+            transition: .5s;
         } 
         img:hover {
-            background-color: #827f88;
+            background-color: #978593;
         }
     }
     .wetravel {
         img {
-            background-color: #E4E0DA;
+            background-color: #cfccce;
             filter: var(--darkener);
-            transition: 1s;
+            transition: .5s;
         } 
         img:hover {
-            background-color: #746e66;
+            background-color: #978593;
         }
     }
     .transit {
         img {
-            background-color: #EADBD6;
+            background-color: #cfccce;
             filter: var(--darkener);
-            transition: 1s;
+            transition: .5s;
         } 
         img:hover {
-            background-color: #8b7c77;
+            background-color: #978593;
         }
     }
 }
@@ -443,6 +444,7 @@
 .study_back img {
     width: 20px;
     margin-top: -.7em;
+    filter: var(--svg-filter);
     @include for-phone-only {
         height: 20px;
         margin-left: .5em;
@@ -741,7 +743,7 @@ ul.transition {
 
 ul.transition li {
     transform: scaleX(0);
-    background: var(--text-color);
+    background: #320127;
     width: 100vw;
     height: 100%;
 }
