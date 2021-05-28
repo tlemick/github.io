@@ -31,7 +31,7 @@
     --footer-bg: hsl(313, 96%, 10%);
     --background-color: hsl(312, 100%, 4%);
     --hero-text-color: #c85aa5;
-    --header-bg: rgba(94, 94, 94, 0.58);
+    --header-bg: #320127c5;
     --svg-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
   }
   body.light-theme {
@@ -41,7 +41,7 @@
     --darkener: brightness(1);
     --img-padding: hsl(300, 3%, 72%);
     --footer-bg: #d3d3d3;
-    --hero-text-color: hsl(313, 96%, 10%);
+    --hero-text-color: #320127;
     --header-bg: rgba(255, 255, 255, 0.575);
     --svg-filter: invert(9%) sepia(67%) saturate(1577%) hue-rotate(281deg) brightness(94%) contrast(112%);
   }
@@ -63,11 +63,11 @@ body.dark-theme {
   --background-color: hsl(312, 100%, 4%);
   --text-color: #ada9ac;
   --overlay: linear-gradient(0deg, rgba(11,29,105,0.7973390039609594) 28%, rgba(11,29,105,0.44439782749037116) 100%);
-  --darkener: brightness(0.8);
+  --darkener: brightness(0.6);
   --img-padding: #310927;
   --footer-bg: #320127;
   --hero-text-color: #c85aa5;
-  --header-bg: rgba(94, 94, 94, 0.58);
+  --header-bg: #320127c5;
   --svg-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
 }
 
@@ -439,7 +439,7 @@ body {
 }
 
 .nav__right {
-  background-color: white;
+  background-color: var(--background-color);
   grid-column: 2 / 3;
   grid-row: 1 / 3;
   transform: scaleY(0);
