@@ -670,6 +670,10 @@ body {
   }
 }
 
+.case__sub-head a img {
+  filter: var(--svg-filter);
+}
+
 .case .case__title {
   text-decoration: none;
   display: inline-block;
