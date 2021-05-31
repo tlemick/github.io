@@ -209,6 +209,6 @@ $(document).ready(function () {
     scrollImages();
 
     setTimeout(function () {
-        $(".se-pre-con").fadeOut("slow");;
-    }, 1000);
+        $(".se-pre-con").slideUp("slow");;
+    }, 1500);
 });
