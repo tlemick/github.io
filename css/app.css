@@ -25,19 +25,17 @@
 @media (prefers-color-scheme: dark) {
   body {
     --text-color: #ada9ac;
-    --overlay: linear-gradient(0deg, rgba(11,29,105,0.7973390039609594) 28%, rgba(11,29,105,0.44439782749037116) 100%);
-    --darkener: brightness(0.6);
+    --darkener: brightness(0.75);
     --img-padding: #310927;
     --footer-bg: hsl(313, 96%, 10%);
     --background-color: hsl(312, 100%, 4%);
-    --hero-text-color: #c85aa5;
-    --header-bg: #320127c5;
+    --hero-text-color: #ffffff;
+    --header-bg: rgba(50, 1, 39, 0.773);
     --svg-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
   }
   body.light-theme {
     --background-color: #E3E3E3;
     --text-color: #320127;
-    --overlay: linear-gradient(0deg, rgba(243,243,243,1) 0%, rgba(243,243,243,0.5704482476584384) 53%, rgba(243,243,243,0.4780112728685224) 61%, rgba(243,243,243,0) 100%);
     --darkener: brightness(1);
     --img-padding: hsl(300, 3%, 72%);
     --footer-bg: #d3d3d3;
@@ -50,7 +48,6 @@
 body {
   --background-color: #E3E3E3;
   --text-color: #320127;
-  --overlay: linear-gradient(0deg, rgba(243,243,243,1) 0%, rgba(243,243,243,0.5704482476584384) 53%, rgba(243,243,243,0.4780112728685224) 61%, rgba(243,243,243,0) 100%);
   --darkener: brightness(1);
   --img-padding: hsl(300, 3%, 72%);
   --footer-bg: #d3d3d3;
@@ -62,11 +59,10 @@ body {
 body.dark-theme {
   --background-color: hsl(312, 100%, 4%);
   --text-color: #ada9ac;
-  --overlay: linear-gradient(0deg, rgba(11,29,105,0.7973390039609594) 28%, rgba(11,29,105,0.44439782749037116) 100%);
-  --darkener: brightness(0.6);
+  --darkener: brightness(0.75);
   --img-padding: #310927;
   --footer-bg: #320127;
-  --hero-text-color: #c85aa5;
+  --hero-text-color: #ffffff;
   --header-bg: #320127c5;
   --svg-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
 }
@@ -151,7 +147,7 @@ body {
 
 /* --------Hero Image -----------------------------------------------*/
 .hero__image {
-  background-image: var(--overlay), url(../images/me.png);
+  background-image: none;
   filter: var(--darkener);
   background-repeat: no-repeat;
   background-size: cover;
@@ -239,7 +235,7 @@ body {
   .header {
     height: 60px;
     width: 100vw;
-    background-color: white;
+    background-color: var(--header-bg);
   }
 }
 

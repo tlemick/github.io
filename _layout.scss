@@ -2,7 +2,7 @@
 /* --------Hero Image -----------------------------------------------*/
 
 .hero__image {
-    background-image: var(--overlay), url(../images/me.png);
+    background-image: none;
     filter: var(--darkener);
     background-repeat: no-repeat;
     background-size: cover;
@@ -77,7 +77,7 @@
     @include for-phone-only {
         height: 60px;
         width: 100vw;
-        background-color: white;
+        background-color: var(--header-bg);
     }
 }
 
