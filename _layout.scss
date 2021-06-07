@@ -20,11 +20,10 @@
 }
 
 .hero__intro {
-    grid-column: 1 / 4;
+    grid-column: 1 / 6;
     grid-row-start: 3;
     align-self: end;
     padding-left: 120px;
-
     @include for-phone-only {
         grid-column: 1 / 6;
         grid-row-start: 4;
@@ -33,24 +32,14 @@
     }
 }
 
-.hero__intro--line {
-    height: 5.2rem;
-    position: relative;
-    overflow: hidden;
-    h1 {
-        position: absolute;
-        line-height: 2rem;
-        color: var(--hero-text-color);
-    }
+.hero__intro--line h1 {
+    color: var(--hero-text-color);
+    font-size: 3.5em;
+    line-height: 1.4em;
+    margin: 0 0;
     @include for-phone-only {
-        height: 3.4rem;
-    }
-}
-
-.hero__intro--spacer {  
-    margin-top: 3em;
-    @include for-phone-only {
-        margin-top: 0;
+        font-size: 2em;
+        margin: 0 0;
     }
 }
 
@@ -66,6 +55,13 @@
 
 .hero__intro--subtitle {
     margin-left: 1em;
+}
+
+.spacer {
+    margin-top: 1em;
+    @include for-phone-only {
+        margin-top: 1em;
+    }
 }
 
 

@@ -38,6 +38,7 @@ $(document).ready(function () {
     // Day Night Toggle End
 
     // Title Animation Start
+    /*
     gsap.timeline().from(".js-line h1", 1.8, {
         y: 200,
         ease: "power4.out",
@@ -57,6 +58,7 @@ $(document).ready(function () {
         transformOrigin: "0% 100%",
         ease: Power3.out
     });
+    */
     // Title Animation End
 
     //-------- Case Study Tiles Transition ---------------
