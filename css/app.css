@@ -132,6 +132,15 @@ a {
   color: #DAA9A9;
 }
 
+/*
+.transition__h1 h1 {
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'White Inktrap';
+    font-weight: 500;
+}
+*/
 /*-------------------------Body Defaults----------------*/
 body, html {
   padding: 0;

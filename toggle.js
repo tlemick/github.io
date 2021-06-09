@@ -76,7 +76,7 @@ $(document).ready(function () {
     // Page Transition Start
     function pageTransition() {
         gsap.timeline().to('ul.transition li', { duration: .5, scaleX: 1, transformOrigin: "top left" })
-        gsap.timeline().to('ul.transition li', { duration: .5, scaleX: 0, transformOrigin: "top left", delay: 1 })
+        gsap.timeline().to('ul.transition li', { duration: 1.5, scaleX: 0, transformOrigin: "top left", delay: 2 })
     }
     function delay(n) {
         return new Promise(done => {
