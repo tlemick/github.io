@@ -98,7 +98,6 @@
 }
 
 .header__toggle {
-    color: var(--text-color);
     margin-top: 3em;
     width: 60px;
     display: flex;
@@ -129,21 +128,26 @@
     }
   }
 
+  .header__toggle p {
+      color: black;
+      font-family: 'Whyte Inktrap';
+  }
+
   .header__toggle:hover {
     p {
-        color: #c85aa5;
+        color: #ffffff;
         cursor: pointer;
     }
   }
   .header__toggle.active {
     p {
-        color: #c85aa5;
+        color: #6d365b;
     }
   }
 
   .header__toggle.active:hover {
     p {
-        color: #800064;
+        color: #ffffff;
     }
   }
 

@@ -72,34 +72,34 @@
         --footer-bg: hsl(313, 96%, 10%);
         --background-color: hsl(312, 100%, 4%);
         --hero-text-color: #ffffff;
-        --header-bg: rgba(50, 1, 39, 0.773);
+        --header-bg: rgb(157, 135, 152);
         --svg-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
-        --right-nav-bg: #320127;
+        --right-nav-bg: rgb(157, 135, 152);
     }
 
     body.light-theme {
         --background-color: #E3E3E3;
-        --text-color: #320127;
+        --text-color: #000000;
         --darkener: brightness(1);
         --img-padding: hsl(300, 3%, 72%);
         --footer-bg: #d3d3d3;
         --hero-text-color: #320127;
-        --header-bg: rgba(255, 255, 255, 0.575);
-        --svg-filter: invert(9%) sepia(67%) saturate(1577%) hue-rotate(281deg) brightness(94%) contrast(112%);
-        --right-nav-bg: #ffffff;
+        --header-bg: rgb(157, 135, 152);
+        --svg-filter: none;
+        --right-nav-bg: rgb(157, 135, 152);
     }
 }
 
 body {
     --background-color: #E3E3E3;
-    --text-color: #320127;
+    --text-color: #000000;
     --darkener: brightness(1);
     --img-padding: hsl(300, 3%, 72%);
     --footer-bg: #d3d3d3;
     --hero-text-color: #320127;
-    --header-bg: rgba(255, 255, 255, 0.575);
-    --svg-filter: invert(9%) sepia(67%) saturate(1577%) hue-rotate(281deg) brightness(94%) contrast(112%);
-    --right-nav-bg: #ffffff;
+    --header-bg: rgb(157, 135, 152);
+    --svg-filter: none;
+    --right-nav-bg: #9d8798;
 }
 
 body.dark-theme {
@@ -109,9 +109,9 @@ body.dark-theme {
     --img-padding: #310927;
     --footer-bg: #320127;
     --hero-text-color: #ffffff;
-    --header-bg: #320127c5;
+    --header-bg: rgb(157, 135, 152);
     --svg-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
-    --right-nav-bg: #320127;
+    --right-nav-bg: rgb(157, 135, 152);
 }
 
 
@@ -145,6 +145,7 @@ h2 {
     }
 }
 
+
 * {
     font-family: 'Lora', serif;
     box-sizing: border-box;
@@ -166,11 +167,6 @@ h2 {
 a {
     text-decoration: none;
 }
-
-.override {
-    color:hsl(313, 96%, 10%);
-}
-
 
 .colorful a {
     color: #DAA9A9;
