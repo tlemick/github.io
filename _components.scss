@@ -425,6 +425,9 @@
     width: 60px;
     display: flex;
     flex-direction: column;
+    p {
+        color: black;
+    }
     @include for-phone-only {
         margin-left: 1em;
         margin-top: 0;

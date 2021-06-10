@@ -282,6 +282,7 @@ body {
   width: 20px;
   margin-top: -.6em;
   filter: var(--svg-filter);
+  margin-left: -0.1em;
 }
 
 @media (max-width: 599px) {
@@ -291,7 +292,7 @@ body {
     margin-top: 0;
   }
   .header__toggle img {
-    margin-top: 0;
+    margin-top: -0.4em;
     margin-right: 1.5em;
     margin-left: .5em;
   }
@@ -782,6 +783,10 @@ body {
   width: 60px;
   display: flex;
   flex-direction: column;
+}
+
+.study_back p {
+  color: black;
 }
 
 @media (max-width: 599px) {

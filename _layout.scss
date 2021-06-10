@@ -107,13 +107,14 @@
         width: 20px;
         margin-top: -.6em;
         filter: var(--svg-filter);
+        margin-left: -0.1em;
     }
     @include for-phone-only {
         width: auto;
         flex-direction: row;
         margin-top: 0;
         img {
-            margin-top: 0;
+            margin-top: -0.4em;
             margin-right: 1.5em;
             margin-left: .5em;
         }
