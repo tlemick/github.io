@@ -33,13 +33,14 @@
 }
 
 .hero__intro--line h1 {
-    color: var(--text-color);
+    color: var(--hero-text-color);
     font-size: 3.5em;
     line-height: 1.4em;
     margin: 0 0;
     @include for-phone-only {
         font-size: 2em;
         margin: 0 0;
+        color: var(--text-color);
     }
 }
 

@@ -29,7 +29,7 @@
     --img-padding: #310927;
     --footer-bg: hsl(313, 96%, 10%);
     --background-color: hsl(312, 100%, 4%);
-    --hero-text-color: #ffffff;
+    --hero-text-color: #000000;
     --header-bg: rgb(157, 135, 152);
     --svg-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
     --right-nav-bg: rgb(157, 135, 152);
@@ -40,7 +40,7 @@
     --darkener: brightness(1);
     --img-padding: hsl(300, 3%, 72%);
     --footer-bg: #d3d3d3;
-    --hero-text-color: #320127;
+    --hero-text-color: #000000;
     --header-bg: rgb(157, 135, 152);
     --svg-filter: none;
     --right-nav-bg: rgb(157, 135, 152);
@@ -53,7 +53,7 @@ body {
   --darkener: brightness(1);
   --img-padding: hsl(300, 3%, 72%);
   --footer-bg: #d3d3d3;
-  --hero-text-color: #320127;
+  --hero-text-color: #000000;
   --header-bg: rgb(157, 135, 152);
   --svg-filter: none;
   --right-nav-bg: #9d8798;
@@ -65,7 +65,7 @@ body.dark-theme {
   --darkener: brightness(0.75);
   --img-padding: #310927;
   --footer-bg: #320127;
-  --hero-text-color: #ffffff;
+  --hero-text-color: #000000;
   --header-bg: rgb(157, 135, 152);
   --svg-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
   --right-nav-bg: rgb(157, 135, 152);
@@ -196,7 +196,7 @@ body {
 }
 
 .hero__intro--line h1 {
-  color: var(--text-color);
+  color: var(--hero-text-color);
   font-size: 3.5em;
   line-height: 1.4em;
   margin: 0 0;
@@ -206,6 +206,7 @@ body {
   .hero__intro--line h1 {
     font-size: 2em;
     margin: 0 0;
+    color: var(--text-color);
   }
 }
 
@@ -703,7 +704,7 @@ body {
 }
 
 .case .smg img:hover {
-  background-color: #978593;
+  background-color: #9d8798;
 }
 
 .case .zeguro img {
@@ -713,7 +714,7 @@ body {
 }
 
 .case .zeguro img:hover {
-  background-color: #978593;
+  background-color: #9d8798;
 }
 
 .case .opera img {
@@ -723,7 +724,7 @@ body {
 }
 
 .case .opera img:hover {
-  background-color: #978593;
+  background-color: #9d8798;
 }
 
 .case .wetravel img {
@@ -733,7 +734,7 @@ body {
 }
 
 .case .wetravel img:hover {
-  background-color: #978593;
+  background-color: #9d8798;
 }
 
 .case .transit img {
@@ -743,7 +744,7 @@ body {
 }
 
 .case .transit img:hover {
-  background-color: #978593;
+  background-color: #9d8798;
 }
 
 .contact-tiles {
