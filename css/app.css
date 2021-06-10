@@ -897,7 +897,7 @@ body {
 
 .study__headline {
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 60px 40% 60%;
   margin-top: 3em;
 }
 
@@ -910,10 +910,10 @@ body {
 }
 
 .study__headline__header {
-  grid-column: 1 / 2;
+  grid-column: 2 / 3;
   align-self: end;
   vertical-align: bottom;
-  padding-left: 20%;
+  padding-left: 5%;
 }
 
 .study__headline__header h1 {
@@ -929,7 +929,7 @@ body {
 }
 
 .study__headline__subheader {
-  grid-column: 2 / 3;
+  grid-column: 3 / 4;
   align-self: end;
   vertical-align: bottom;
   padding-bottom: 3.1em;
@@ -949,7 +949,7 @@ body {
 
 .study__metrics {
   display: grid;
-  grid-template-columns: 5% 1fr 1fr 1fr 5%;
+  grid-template-columns: 60px 1fr 1fr 1fr 5%;
   margin-top: 3em;
 }
 
