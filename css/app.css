@@ -196,7 +196,7 @@ body {
 }
 
 .hero__intro--line h1 {
-  color: #320127;
+  color: var(--text-color);
   font-size: 3.5em;
   line-height: 1.4em;
   margin: 0 0;
