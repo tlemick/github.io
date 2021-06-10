@@ -75,6 +75,9 @@ $(document).ready(function () {
 
     // Page Transition Start
     function pageTransition() {
+        let frivolity = ['Reticulating Splines', 'Synthesizing Gravity', 'Deciding What Message to Display Next', 'Adding Hidden Agenda', 'Error 404: Joke Not Found', 'Ready Player One', 'Switching Sides', 'Cheat Code Activated'];
+        let indexOfFrivolity = Math.floor(Math.random() * frivolity.length);
+        document.getElementById("theTitleSpline").innerHTML = frivolity[indexOfFrivolity];
         gsap.timeline()
             .to('ul.transition li', { duration: .5, scaleX: 1, transformOrigin: "top left" })
             .to('.transition__h1', { duration: .5, opacity: 1 })
