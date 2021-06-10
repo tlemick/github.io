@@ -75,8 +75,11 @@ $(document).ready(function () {
 
     // Page Transition Start
     function pageTransition() {
-        gsap.timeline().to('ul.transition li', { duration: .5, scaleX: 1, transformOrigin: "top left" })
-        gsap.timeline().to('ul.transition li', { duration: 1.5, scaleX: 0, transformOrigin: "top left", delay: 2 })
+        gsap.timeline()
+            .to('ul.transition li', { duration: .5, scaleX: 1, transformOrigin: "top left" })
+            .to('.transition__h1', { duration: .5, opacity: 1 })
+            .to('.transition__h1', { duration: .75, opacity: 0, y: "-=24" })
+            .to('ul.transition li', { duration: .75, scaleX: 0, transformOrigin: "top right" })
     }
     function delay(n) {
         return new Promise(done => {
@@ -127,7 +130,7 @@ $(document).ready(function () {
         tl.fromTo($(".main-nav"), {zIndex: -1}, {zIndex: 5})
         .to($('.js-nav__panels'), {
             //onStart: $('.main-nav').css('z-index', '-1'),
-            duration: 1,
+            duration: .6,
             scaleY: 1,
             stagger: {
                 each: 0.3,
