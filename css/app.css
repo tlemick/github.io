@@ -458,7 +458,8 @@ body {
   color: black;
   transform: translateY(5px);
   opacity: 0;
-  font-family: 'Whyte Inktrap Book';
+  font-family: 'Whyte Inktrap';
+  font-weight: 200;
   font-size: clamp(1.4em, 5vw, 3em);
   margin-top: 20px;
   margin-left: 1%;
