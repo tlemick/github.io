@@ -33,6 +33,18 @@
     font-style: normal;
 }
 
+  @font-face {
+    font-family: 'Whyte Inktrap Book';
+    src: url('WhyteInktrap-BookItalic.eot');
+    src: local('Whyte Inktrap Book Italic'), local('WhyteInktrap-BookItalic'),
+        url('WhyteInktrap-BookItalic.eot?#iefix') format('embedded-opentype'),
+        url('WhyteInktrap-BookItalic.woff2') format('woff2'),
+        url('WhyteInktrap-BookItalic.woff') format('woff'),
+        url('WhyteInktrap-BookItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
 .forum {
     font-family: 'Whyte Inktrap';
     font-weight: 200;
@@ -66,52 +78,80 @@
 
 @media (prefers-color-scheme: dark) {
     body {
-        --text-color: #ada9ac;
-        --darkener: brightness(0.75);
-        --img-padding: #310927;
-        --footer-bg: hsl(313, 96%, 10%);
+        --text-color: #ffffff;
+        --darkener: brightness(0.95);
+        --img-padding: #363636;
         --background-color: hsl(312, 100%, 4%);
-        --hero-text-color: #000000;
+        --hero-text-color: #f76374;
         --header-bg: rgb(157, 135, 152);
         --svg-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
         --right-nav-bg: rgb(157, 135, 152);
+        --smg-bg: #70573B;
+        --zeguro-bg: #36426B;
+        --operatists-bg: #4A3565;
+        --wetravel-bg: #807D3E;
+        --streetcars-bg: #366072;
+        --bw: black;
+        --transition-bg: #a14949;
     }
 
     body.light-theme {
-        --background-color: #E3E3E3;
+        --background-color: #ffffff;
         --text-color: #000000;
         --darkener: brightness(1);
-        --img-padding: hsl(300, 3%, 72%);
-        --footer-bg: #d3d3d3;
+        --img-padding: #e2e2e2;
         --hero-text-color: #000000;
         --header-bg: rgb(157, 135, 152);
         --svg-filter: none;
         --right-nav-bg: rgb(157, 135, 152);
+        --smg-bg: #FFC98C;
+        --zeguro-bg: #839EFF;
+        --operatists-bg: #BC87FF;
+        --wetravel-bg: #FFFA77;
+        --streetcars-bg: #7CD8FF;
+        --bw: white;
+        --transition-bg: #ff7070;
+
     }
 }
 
 body {
-    --background-color: #E3E3E3;
+    --background-color: #ffffff;
     --text-color: #000000;
     --darkener: brightness(1);
-    --img-padding: hsl(300, 3%, 72%);
+    --img-padding: #e2e2e2;
     --footer-bg: #d3d3d3;
     --hero-text-color: #000000;
     --header-bg: rgb(157, 135, 152);
     --svg-filter: none;
     --right-nav-bg: #9d8798;
+    --smg-bg: #FFC98C;
+    --zeguro-bg: #839EFF;
+    --operatists-bg: #BC87FF;
+    --wetravel-bg: #FFFA77;
+    --streetcars-bg: #7CD8FF;
+    --bw: white;
+    --transition-bg: #ff7070;
+
 }
 
 body.dark-theme {
     --background-color: hsl(312, 100%, 4%);
-    --text-color: #ada9ac;
-    --darkener: brightness(0.75);
-    --img-padding: #310927;
-    --footer-bg: #320127;
-    --hero-text-color: #000000;
+    --text-color: #ffffff;
+    --darkener: brightness(0.95);
+    --img-padding: #363636;
+    --hero-text-color: #f76374;
     --header-bg: rgb(157, 135, 152);
     --svg-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
     --right-nav-bg: rgb(157, 135, 152);
+    --smg-bg: #70573B;
+    --zeguro-bg: #36426B;
+    --operatists-bg: #4A3565;
+    --wetravel-bg: #807D3E;
+    --streetcars-bg: #366072;
+    --bw: black;
+    --transition-bg: #a14949;
+
 }
 
 
@@ -169,15 +209,14 @@ a {
 }
 
 .colorful a {
-    color: #DAA9A9;
+    color: #000000;
 }
 
 
 .transition__h1 {
-
-    color: white;
+    color: var(--text-color);
     font-family: 'Whyte Inktrap';
-    font-weight: 500;
+    font-weight: 200;
     display: flex;
     flex: row;
     justify-content: center;
@@ -187,8 +226,27 @@ a {
 
 }
 
+.first-word:first-child {
+    font-family: 'Whyte Inktrap';
+    font-weight: 200;
+}
 
 
+.smg {
+    background-color: var(--smg-bg);
+}
+.zeguro {
+    background-color: var(--zeguro-bg);
+}
+.operatists {
+    background-color: var(--operatists-bg);
+}
+.wetravel {
+    background-color: var(--wetravel-bg);
+}
+.streetcars {
+    background-color: var(--streetcars-bg);
+}
 
 /*-------------------------Body Defaults----------------*/
 
@@ -203,3 +261,6 @@ body {
     position: relative;
     transition: all .6s ease-in-out;
 }
+
+
+/*-------------------------The Arrows-----------------------*/

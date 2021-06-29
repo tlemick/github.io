@@ -2,7 +2,7 @@
 /* --------Hero Image -----------------------------------------------*/
 
 .hero__image {
-    background-image: none;
+    background-image: url(../images/background@2x.png);
     filter: var(--darkener);
     background-repeat: no-repeat;
     background-size: cover;
@@ -10,20 +10,19 @@
     width: 100%;
     height: 100vh;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 5px;
     @include for-tablet-landscape-up {
-        background-image: url(../images/Marcus-architecture-samp-1.jpg);
+        background-image: url(../images/mt_background@4x.png);
         background-size: cover;
     }
 }
 
 .hero__intro {
-    grid-column: 1 / 6;
-    grid-row-start: 3;
+    grid-column: 2 / 5;
+    grid-row-start: 4;
     align-self: end;
-    padding-left: 120px;
     @include for-phone-only {
         grid-column: 1 / 6;
         grid-row-start: 4;
@@ -34,28 +33,15 @@
 
 .hero__intro--line h1 {
     color: var(--hero-text-color);
-    font-size: 3.5em;
+    font-size: clamp(2rem, 7.5vw, 4rem);
     line-height: 1.4em;
     margin: 0 0;
+    /*
     @include for-phone-only {
         font-size: 2em;
         margin: 0 0;
         color: var(--text-color);
-    }
-}
-
-.hero__intro--continue {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 3em;
-    img {
-        height: 1em;
-    }
-}
-
-.hero__intro--subtitle {
-    margin-left: 1em;
+    }*/
 }
 
 .spacer {
@@ -72,86 +58,125 @@
 .header {
     z-index: 6;
     position: fixed;
-    width: 60px;
-    height: 100vh;
-    background-color: var(--header-bg);
-    @include for-phone-only {
-        height: 60px;
-        width: 100vw;
-        background-color: var(--header-bg);
-    }
+    width: 100vw;
+
 }
 
 .header__nav {
     z-index: 6;
-    width: 60px;
+    width: 100vw;
     position: fixed;
     display: flex;
-    flex-direction: column;
-    padding: 1.1em;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-top: 1.5%;
     @include for-phone-only {
+        background-color: var(--background-color);
         flex-direction: row;
-        justify-content: flex-end;
-        align-items: baseline;
+        justify-content: space-between;
+        align-items: center;
         width: 100vw;
-        padding: 0;
+        padding-left: 5%;
     }
 }
 
+.monogram {
+    filter: var(--svg-filter);
+    @include for-phone-only {
+        height: 20px;
+        margin-bottom: 6px;
+    }
+}
+
+.header__icon {
+    filter: var(--svg-filter);
+}
+
 .header__toggle {
-    margin-top: 3em;
-    width: 60px;
     display: flex;
-    flex-direction: column;
-    img {
-        width: 20px;
-        margin-top: -.6em;
-        filter: var(--svg-filter);
-        margin-left: -0.1em;
+    flex-direction: row;
+    p {
+        padding-right: .5em;
+        padding-left: .5em;
+        margin-right: 1em;
     }
     @include for-phone-only {
         width: auto;
         flex-direction: row;
         margin-top: 0;
-        img {
-            margin-top: -0.4em;
-            margin-right: 1.5em;
-            margin-left: .5em;
-        }
     }
   }
 
-  .menu-rotated {
-    transform-origin:bottom left;
-    transform: rotate(-90deg) translateY(100%);
-    transition: all 0.3s ease-in-out;
-    @include for-phone-only {
-        transform: none;
-    }
+  .header__toggle--item p {
+      color: var(--text-color);
+      font-family: 'Whyte Inktrap Extralight';
+      font-size: 24px;
+      margin-top: 1.4em;
+      @include for-phone-only {
+          font-size: 18px;
+      }
   }
 
-  .header__toggle p {
-      color: black;
-      font-family: 'Whyte Inktrap';
+  .header__toggle--item {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
   }
 
   .header__toggle:hover {
     p {
-        color: #ffffff;
         cursor: pointer;
     }
   }
   .header__toggle.active {
     p {
-        color: #6d365b;
+        font-family: 'Whyte Inktrap Book';
     }
   }
 
   .header__toggle.active:hover {
-    p {
-        color: #ffffff;
-    }
+    
   }
+
+  .strikethrough {
+    position: relative;
+    display: block;
+    cursor: pointer;
+  }
+  
+  .strikethrough:before, .strikethrough:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    top: 35%;
+    background: #000000;
+  }
+  
+  .strikethrough:before {
+    left: -1.5px;
+  }
+  .strikethrough:after {
+    right: 2.5px;
+    background: #000000;
+    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  
+  .strikethrough:hover:before {
+    background: #000000;
+    width: 100%;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  
+  .strikethrough:hover:after {
+    background: transparent;
+    width: 100%;
+    transition: 0s;
+  }
+  
 
 
 .iframe {

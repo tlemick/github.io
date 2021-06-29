@@ -1,23 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Group 7</title>
-    <defs>
-        <filter id="filter-1">
-            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.282353 0 0 0 0 0.282353 0 0 0 0 0.282353 0 0 0 1.000000 0"></feColorMatrix>
-        </filter>
-    </defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="portfolio" transform="translate(-867.000000, -782.000000)">
-            <g id="Group-5" transform="translate(867.000000, 543.000000)">
-                <g id="Group-7" transform="translate(0.000000, 239.000000)">
-                    <circle id="Oval" fill="#FFFFFF" cx="30" cy="30" r="30"></circle>
-                    <g filter="url(#filter-1)" id="down">
-                        <g transform="translate(30.000000, 30.500000) rotate(90.000000) translate(-30.000000, -30.500000) translate(17.000000, 13.000000)">
-                            <path d="M25.1673759,21.9971631 L23.5673759,20.3971631 L14.1489362,29.8042554 L14.1489362,1.90070923 C14.1489362,1.27659574 13.6382979,0.765957447 13.0141844,0.765957447 C12.3900709,0.765957447 11.8794326,1.27659574 11.8794326,1.90070923 L11.8794326,29.8042554 L2.47234038,20.3971631 L0.872340426,21.9971631 L13.0141844,34.1390071 L25.1673759,21.9971631 Z" id="Path" fill="#000000" fill-rule="nonzero"></path>
-                        </g>
-                    </g>
-                </g>
-            </g>
-        </g>
-    </g>
+<svg width="95" height="93" viewBox="0 0 95 93" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M42.9 40.5L81 2.4C84.2 -0.8 89.4 -0.8 92.6 2.4C95.8 5.6 95.8 10.8 92.6 14L60.3 46.3L92.6 78.6C95.8 81.8 95.8 87 92.6 90.2C91 91.8 88.9 92.6 86.8 92.6C84.7 92.6 82.6 91.8 81 90.2L42.9 52.1C39.7 48.9 39.7 43.7 42.9 40.5Z" fill="black"/>
+<path d="M2.4 40.5L40.5 2.4C43.7 -0.8 48.9 -0.8 52.1 2.4C55.3 5.6 55.3 10.8 52.1 14L19.8 46.3L52.1 78.6C55.3 81.8 55.3 87 52.1 90.2C50.5 91.8 48.4 92.6 46.3 92.6C44.2 92.6 42.1 91.8 40.5 90.2L2.4 52.1C-0.799999 48.9 -0.799999 43.7 2.4 40.5Z" fill="black"/>
 </svg>

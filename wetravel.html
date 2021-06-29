@@ -17,77 +17,67 @@
                 <h1 class="transition__h1" id="theTitleSpline"></h1>
             </li>
         </ul>
+        
         <header class="header">
             <div class="header__nav">
-                <div class="header__toggle semibold header__toggle--menu">
-                    <p class="menu-rotated">Menu</p>
-                    <img src="images/menu_icon.svg">
-                </div>
-                <div class="header__toggle semibold header__toggle--mode">
-                    <p class="menu-rotated">Lighting</p>
-                    <img src="images/light_icon.svg">
+                <div class="monogram"><a href="index.html"><img src="images/monogram.svg"></a></div>
+                <div class="header__toggle semibold">
+                    <div class="header__toggle--item">
+                        <img class="header__icon" src='images/portfolio-icon.svg'>
+                        <p class="header__toggle--menu strikethrough">Portfolio</p>
+                    </div>
+                    <div class="header__toggle--item">
+                        <img class="header__icon" src='images/lighting-icon.svg'>
+                        <p class="header__toggle--mode strikethrough">Lighting</p>
+                    </div>
                 </div>
             </div>
         </header>
 
-        <div class="main-nav" style="z-index: 5;">
+        <div class="main-nav js-main-nav" style="z-index: 5;">
             <div class="nav__right js-nav__panels">
                 <ul>
-                    <li><a class="semibold main-nav__major-link js-nav__link" href="index.html">Home</a></li>
-                    <li><a class="semibold main-nav__major-link js-nav__link" href="">Portfolio</a></li>
-                        <ul>
-                            <li><a class="semibold main-nav__minor-link js-nav__link" href="stockmarketgame.html">Stock Market Game</a></li>
-                            <li><a class="semibold main-nav__minor-link js-nav__link" href="zeguro.html">Zeguro</a></li>
-                            <li><a class="semibold main-nav__minor-link js-nav__link" href="operatists.html">Orbits of the Operatists</a></li>
-                            <li><a class="semibold main-nav__minor-link js-nav__link" href="wetravel.html">WeTravel</a></li>
-                            <li><a class="semibold main-nav__minor-link js-nav__link" href="transit.html">Streetcars of San Francisco</a></li>
-                        </ul>
-                    <li><a class="semibold main-nav__major-link js-nav__link" href="">Contact</a></li>
+                    <li>
+                        <h4 class="forum main-nav__numeral js-nav__sublink">(01)</h4>
+                        <a class="main-nav__major-link js-nav__link" href="zeguro.html">Zeguro</a>
+                        <h2 class="forum main-nav__year js-nav__sublink">2019</h2>
+                    </li>
+                    <li>
+                        <h4 class="forum main-nav__numeral js-nav__sublink">(02)</h4>
+                        <a class="main-nav__major-link js-nav__link" href="stockmarketgame.html">Stock Market Game</a>
+                        <h2 class="forum main-nav__year js-nav__sublink">2020</h2>
+                    </li>
+                    <li>
+                        <h4 class="forum main-nav__numeral js-nav__sublink">(03)</h4>
+                        <a class="main-nav__major-link js-nav__link" href="operatists.html">Orbits of the Operatists</a>
+                        <h2 class="forum main-nav__year js-nav__sublink">2018</h2>
+                    </li>
+                    <li>
+                        <h4 class="forum main-nav__numeral js-nav__sublink">(04)</h4>
+                        <a class="main-nav__major-link js-nav__link" href="transit.html">Streetcars of San Francisco</a>
+                        <h2 class="forum main-nav__year js-nav__sublink">2018</h2>
+                    </li>
+                    <li>
+                        <h4 class="forum main-nav__numeral js-nav__sublink">(05)</h4>
+                        <a class="main-nav__major-link js-nav__link" href="wetravel.html">WeTravel</a>
+                        <h2 class="forum main-nav__year js-nav__sublink">2017</h2>
+                    </li>
                 </ul>
-            </div>
-            <div class="nav__left-top js-nav__panels">
-                <div class="main-nav__about-text js-nav__link">
-                    <h2 class="semibold js-nav__link">About this site</h2>
-                    <p class="js-nav__link">Headings are set in <a href="https://abcdinamo.com/typefaces/whyte">Whyte Inktrap</a> while body and subheadings are set in Google font <a href="https://fonts.google.com/specimen/Lora">Lora</a>.</p>
-                    <p class="js-nav__link">Animations and page transitions were created using <a href="https://barba.js.org/">Barba.JS</a> and the <a href="https://greensock.com/gsap/">GSAP animation platform</a>.</p>
-                </div>
-            </div>
-
-            <div class="nav__left-bottom js-nav__panels">
-                <div class="main-nav__menu-contact js-nav__element">
-                    <h2 class="semibold js-nav__element">Contact Me</h2>
-                    <div class="contact-tiles js-nav__element">
-                        <div class="contact-icon"><img src="images/mail.svg"></div>
-                        <p class="js-nav__element">tlemick@gmail.com</p>
-                    </div>
-                    <div class="contact-tiles js-nav__element">
-                        <div class="contact-icon"><img src="images/li.svg"></div>
-                        <p class="js-nav__element">linked.in/tlemick</p>
-                    </div>
-                </div>
             </div>
         </div>
 
 
 
+
         <main data-barba="container" data-barba-namespace="home">
-            <a href="index.html">
-                <div class="study_back">
-                    <p class="menu-rotated semibold">Home</p>
-                    <img src="images/home_icon.svg">
-                </div>
-            </a>
-            <div class="study__hero wetravel--hero">
-                <div class="study__hero--wrapper">
-                    <div class="study__hero--overlay overlay"></div>
-                </div>
-            </div>
-            <div class="study__headline">
+            <div class="study__headline wetravel">
                 <h1 class="study__headline__header semibold">Group journeys @ WeTravel</h1>
                 <div class="study__headline__subheader">
                     <h4>Component Redesign</h4>
                     <h4>Client: WeTravel</h4>
                 </div>
+                <div class="study__headline--shader-top"></div>
+                <div class="study__headline--shader-bottom"></div>
             </div>
 
             <div class="study__metrics">
@@ -112,7 +102,7 @@
             <div class="case_images">
                 <div class="cover">
                     <img src="images/wetravel_boards.png" alt="Fig.1 4 images of sticky notes and drawings indicating user research and feedback analysis">
-                    <div class="overlay"></div>
+                    
                 </div>
             </div>
             <div class="study__metrics">
@@ -130,11 +120,11 @@
             <div class="case_images">
                 <div class="cover">
                     <img src="images/wetravel_ui.png" alt="Fig.2 two screens showing a hypothetical group trip to Egypt and a purchase screen">
-                    <div class="overlay"></div>
+                    
                 </div>
             </div>
             
-            <div class="footer__nav">
+            <div class="footer__nav wetravel">
                 <div class="footer__nav__left">
                     <a href="/operatists.html"><img src="images/arrow_left.svg"></a>
                     <div>

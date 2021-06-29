@@ -38,40 +38,15 @@ $(document).ready(function () {
     // Day Night Toggle End
 
     // Title Animation Start
-    /*
-    gsap.timeline().from(".js-line h1", 1.8, {
-        y: 200,
-        ease: "power4.out",
-        delay: 1,
-        skewY: 10,
-        stagger: {
-            amount: 0.4,
-        },
-    });
-    gsap.timeline().fromTo(".study__hero--overlay", 1.2, {
-        skewX: 30,
-        scale: 1.4
-    }, {
-        skewX: 0,
-        xPercent: 100,
-        duration: 2,
-        transformOrigin: "0% 100%",
-        ease: Power3.out
+/*
+    gsap.timeline().to(".js-text-reveal", 1.8, {
+        y: -15,
+        ease: "power1.out",
+        opacity: 1
     });
     */
-    // Title Animation End
 
-    //-------- Case Study Tiles Transition ---------------
-    /*
-    var navTl = document.getElementsByClassName("opera-link");
-     navTl[0].addEventListener("mouseover", function() {
-        gsap.to(".opera-link", {
-            opacity: .2, 
-            duration: 1
-       });
-    });
-    
-    */
+    // Title Animation End    
 
     // Page Transition Start
     function pageTransition() {
@@ -131,31 +106,25 @@ $(document).ready(function () {
 
     function openNav() {
         tl.fromTo($(".main-nav"), {zIndex: -1}, {zIndex: 5})
-        .to($('.js-nav__panels'), {
-            //onStart: $('.main-nav').css('z-index', '-1'),
-            duration: .6,
-            scaleY: 1,
-            stagger: {
-                each: 0.3,
-                ease: "power3",
-            }
+        .to($('.js-main-nav'), {
+            duration: 0.5,
+            opacity: 1,
+            ease: "power1.inOut"
+        }).to($('.js-nav__panels'), {
+            duration: 0.3,
+            opacity: 1,
+            ease: "power1.inOut"
+        }).to(".js-nav__sublink", {
+            opacity: 1,
+            duration: .5,
         }).to(".js-nav__link", {
             opacity: 1,
             y: 0,
-            duration: .1,
-            stagger: {
-                each: 0.06,
-                ease: "power3.in"
-            }
-        }).to(".js-nav__element", {
-            opacity: 1,
-            y: 0,
-            duration: .1,
-            stagger: {
-                each: 0.06,
-                ease: "power3.in"
-            }
-        });
+            duration: .5,
+            ease: "power1.inOut",
+            stagger: 0.1
+        }, ">-.6",
+        );
     }
 
     $('.header__toggle--menu').on('click', function () {
@@ -166,7 +135,7 @@ $(document).ready(function () {
             tl.timeScale(1);
             tl.play();
         } else {
-            tl.timeScale(4);
+            tl.timeScale(1.4);
             tl.reverse();
         }
         handleMenu($(this).hasClass('active'));
@@ -188,30 +157,9 @@ $(document).ready(function () {
 
 
     //--------Case study image reveal on scroll -----------
-    gsap.registerPlugin(ScrollTrigger)
 
     function scrollImages() {
-        let revealContainers = document.querySelectorAll(".overlay");
-
-        revealContainers.forEach((container) => {
-            let tl = gsap.timeline({
-                scrollTrigger: {
-                    trigger: container,
-                    toggleActions: "play none none none",
-                    start: "center bottom",
-                }
-            });
-            tl.fromTo(container, {
-                skewX: 30,
-                scale: 1.4
-            }, {
-                skewX: 0,
-                xPercent: 100,
-                duration: 2,
-                transformOrigin: "0% 100%",
-                ease: Power3.out
-            });
-        });
+        
     }
 
     scrollImages();
@@ -220,3 +168,34 @@ $(document).ready(function () {
         $(".se-pre-con").slideUp("slow");;
     }, 1500);
 });
+
+    gsap.registerPlugin(ScrollTrigger)
+
+    let revealContainers = document.querySelectorAll(".cover");
+
+    revealContainers.forEach((container) => {
+        let image = container.querySelector("img");
+        let tl = gsap.timeline({
+            scrollTrigger: {
+            trigger: container,
+            toggleActions: "restart none none none"
+            }
+        });
+
+        tl.set(container, { autoAlpha: 1 });
+        tl.from(container, 1.5, {
+            ease: Power2.out
+        });
+        tl.from(image, 1.3, {
+            scale: 1.1,
+            delay: -1.5,
+            ease: Power2.out
+        });
+    });
+
+
+
+
+
+
+  

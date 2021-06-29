@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="33px" height="32px" viewBox="0 0 33 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="WhyteInktrap-ThinItalic, Whyte Inktrap" font-size="30" font-style="italic" font-weight="300">
+        <g id="Group" transform="translate(0.000000, 6.000000)" fill="#211B25">
+            <text id="T" letter-spacing="0.00174418596">
+                <tspan x="0" y="15">T</tspan>
+            </text>
+            <text id="L" letter-spacing="0.00174418596">
+                <tspan x="6.8" y="22.2">L</tspan>
+            </text>
+            <text id="E" letter-spacing="0.00174418604">
+                <tspan x="11.4571429" y="18.6571429">E</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
