@@ -250,6 +250,11 @@ a {
 
 /*-------------------------Body Defaults----------------*/
 
+:focus {
+    outline: 3px dashed var(--text-color);
+    outline-offset: 5px;
+}
+
 body, html {
     padding: 0;
     margin: 0;
