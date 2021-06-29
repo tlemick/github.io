@@ -137,9 +137,10 @@
     }
   }
 
+  /*
   .header__toggle.active:hover {
     
-  }
+  }*/
 
   .strikethrough {
     position: relative;
@@ -153,7 +154,7 @@
     width: 0%;
     height: 2px;
     top: 35%;
-    background: #000000;
+    background: var(--text-color);
   }
   
   .strikethrough:before {
@@ -161,12 +162,12 @@
   }
   .strikethrough:after {
     right: 2.5px;
-    background: #000000;
+    background: var(--text-color);
     transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
   }
   
   .strikethrough:hover:before {
-    background: #000000;
+    background: var(--text-color);
     width: 100%;
     transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
   }

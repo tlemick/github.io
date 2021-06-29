@@ -368,6 +368,10 @@ body {
   font-family: 'Whyte Inktrap';
 }
 
+/*
+  .header__toggle.active:hover {
+    
+  }*/
 .strikethrough {
   position: relative;
   display: block;
@@ -380,7 +384,7 @@ body {
   width: 0%;
   height: 2px;
   top: 35%;
-  background: #000000;
+  background: var(--text-color);
 }
 
 .strikethrough:before {
@@ -389,12 +393,12 @@ body {
 
 .strikethrough:after {
   right: 2.5px;
-  background: #000000;
+  background: var(--text-color);
   transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 .strikethrough:hover:before {
-  background: #000000;
+  background: var(--text-color);
   width: 100%;
   transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
@@ -582,7 +586,7 @@ body {
     grid-column: 2 / 3;
     justify-self: end;
     align-self: center;
-    border-right: 2px solid black;
+    border-right: 2px solid var(--text-color);
   }
   .case__image img {
     height: 400px;
